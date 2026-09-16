@@ -893,8 +893,8 @@
 
     .proj-metric {
       display: flex;
-      align-items: baseline;
-      gap: 10px;
+      align-items: center;
+      gap: 12px;
       margin-top: 14px;
       padding-top: 14px;
       border-top: 1px dashed var(--card-border);
@@ -902,8 +902,10 @@
 
     .proj-metric .big {
       font-family: 'JetBrains Mono', monospace;
-      font-size: 1.6rem;
+      font-size: 1.4rem;
       font-weight: 800;
+      white-space: nowrap;
+      flex-shrink: 0;
       background: linear-gradient(90deg, var(--accent), var(--accent-2));
       -webkit-background-clip: text;
       background-clip: text;
@@ -1533,8 +1535,8 @@
           <div class="proj-icon" style="background: linear-gradient(135deg, rgba(6,182,212,.15), rgba(139,92,246,.15)); border-color: rgba(6,182,212,.25);"><span class="material-icons" style="color: var(--accent-2);">flight</span></div>
           <h3 class="proj-title">My Flight Universe ✈️</h3>
           <p class="proj-desc">Interactive flight-log dashboard turning travel data into a visual journal. Features flight telemetry, journey timeline, route explorer, interactive replay and an AI flight agent.</p>
-          <div class="proj-metric"><span class="big" style="font-size:1.15rem;">Live</span><span class="desc">personal project · data visualisation</span></div>
-          <div class="tag-row"><span class="tag hl">JavaScript</span><span class="tag hl">Data Viz</span><span class="tag">CSV</span><span class="tag">AI Agent</span></div>
+          <div class="proj-metric"><span class="desc">Personal project · data visualisation</span></div>
+          <div class="tag-row"><span class="tag hl">JavaScript</span><span class="tag hl">Data Viz</span><span class="tag">AI Agent</span></div>
         </div>
       </a>
     </div>
