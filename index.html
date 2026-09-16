@@ -548,12 +548,15 @@
     }
 
     .stats-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
       gap: 20px;
     }
 
     .stat-card {
+      flex: 1 1 160px;
+      max-width: 220px;
       background: var(--card);
       border: 1px solid var(--card-border);
       border-radius: var(--radius);
@@ -753,12 +756,15 @@
 
     /* ---------- Skills ---------- */
     .skills-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
       gap: 22px;
     }
 
     .skill-card {
+      flex: 1 1 280px;
+      max-width: 360px;
       background: var(--card);
       border: 1px solid var(--card-border);
       border-radius: var(--radius);
@@ -812,12 +818,15 @@
 
     /* ---------- Projects ---------- */
     .proj-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
       gap: 22px;
     }
 
     .proj-card {
+      flex: 1 1 300px;
+      max-width: 360px;
       position: relative;
       border-radius: var(--radius);
       overflow: hidden;
@@ -908,12 +917,15 @@
 
     /* ---------- Education / Achievements ---------- */
     .cards-row {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
       gap: 22px;
     }
 
     .info-card {
+      flex: 1 1 280px;
+      max-width: 560px;
       background: var(--card);
       border: 1px solid var(--card-border);
       border-radius: var(--radius);
@@ -969,13 +981,16 @@
 
     /* ---------- Contact ---------- */
     #contact .contact-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
       gap: 22px;
       margin-top: 10px;
     }
 
     .contact-card {
+      flex: 1 1 260px;
+      max-width: 340px;
       background: var(--card);
       border: 1px solid var(--card-border);
       border-radius: var(--radius);
