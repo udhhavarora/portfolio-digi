@@ -1,6 +1,6 @@
 # Udhhav Arora — Portfolio
 
-Interactive, responsive portfolio for **Udhhav Arora**, Big Data Engineer / Associate Manager at Tredence Analytics.
+Interactive, responsive portfolio for **Udhhav Arora**, Senior Data Engineer / Associate Manager at Tredence Analytics.
 
 Dark, modern single-page site built with pure HTML, CSS & JavaScript — no frameworks, no build step.
 
@@ -13,6 +13,7 @@ Dark, modern single-page site built with pure HTML, CSS & JavaScript — no fram
 - Featured Work / Impact
 - Education
 - Achievements
+- Certifications
 - Contact
 
 ## Deploy to GitHub Pages
