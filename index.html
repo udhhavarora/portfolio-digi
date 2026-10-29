@@ -4,9 +4,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Udhhav Arora — Big Data Engineer</title>
+  <title>Udhhav Arora — Senior Data Engineer</title>
   <meta name="description"
     content="Portfolio of Udhhav Arora — Senior Data Engineer building scalable data platforms across Azure, AWS & GCP.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://udhhavarora.github.io/portfolio-digi/">
+  <meta property="og:title" content="Udhhav Arora — Senior Data Engineer">
+  <meta property="og:description"
+    content="5+ years building production data platforms on Databricks, Spark, Azure & GCP. Databricks Generative AI certified.">
+  <meta property="og:image" content="https://udhhavarora.github.io/portfolio-digi/profile.jpg">
+  <meta name="twitter:card" content="summary">
   <link rel="icon"
     href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='0.9em' font-size='90'>👾</text></svg>">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -320,6 +327,7 @@
       align-items: center;
       justify-content: center;
       padding-top: 120px;
+      padding-bottom: 110px;
       position: relative;
       overflow: hidden;
     }
@@ -508,7 +516,7 @@
       height: 120px;
       border-radius: 50%;
       object-fit: cover;
-      object-position: center 48%;
+      object-position: center;
       border: 3px solid var(--card-border);
       box-shadow: 0 0 0 4px rgba(59, 130, 246, .2);
       flex-shrink: 0;
@@ -981,6 +989,24 @@
       color: var(--txt);
     }
 
+    .achieve-list .cert-meta {
+      display: block;
+      margin-top: 4px;
+      font-size: .82rem;
+    }
+
+    .achieve-list .cert-meta a {
+      color: var(--accent-2);
+      font-weight: 500;
+    }
+
+    .achieve-list .cert-logo {
+      width: 20px;
+      height: 20px;
+      margin-top: 2px;
+      flex-shrink: 0;
+    }
+
     /* ---------- Contact ---------- */
     #contact .contact-grid {
       display: flex;
@@ -1242,19 +1268,19 @@
   <section id="hero">
     <div class="hero-inner">
       <div class="hero-top">
-        <img src="Shot.jpeg" alt="Udhhav Arora" class="hero-photo reveal">
+        <img src="profile.jpg" alt="Udhhav Arora" class="hero-photo reveal" width="120" height="120">
         <div class="hero-text">
           <div class="hero-badge reveal"><span class="dot"></span> Available for Data Engineering roles</div>
           <h1 class="hero-name reveal delay-1">Udhhav <span class="gradient-text">Arora</span></h1>
         </div>
       </div>
       <div class="type-wrap reveal delay-2"><span id="typeText"></span></div>
-      <p class="hero-sub reveal delay-2">Big Data Engineer with <b>4+ years</b> designing and scaling cloud data
+      <p class="hero-sub reveal delay-2">Senior Data Engineer with <b>5+ years</b> designing and scaling cloud data
         platforms across <b>Azure, AWS &amp; GCP</b>, leading migrations, governance rollouts and cost optimisation for
-        enterprise clients in banking &amp; consulting.</p>
+        enterprise clients in banking &amp; consulting. <b>Databricks Generative AI certified</b>.</p>
       <div class="hero-actions reveal delay-3">
         <a href="#projects" class="btn btn-primary"><span class="material-icons">rocket_launch</span> View My Work</a>
-        <a href="Udhhav_Arora_CV_UK_26.pdf" download class="btn btn-ghost"><span
+        <a href="Udhhav_Arora_Senior_Data_Engineer_CV.pdf" download class="btn btn-ghost"><span
             class="material-icons">description</span> Get Resume</a>
       </div>
       <div class="hero-contact reveal delay-3">
@@ -1281,13 +1307,13 @@
     <div class="stats-grid">
       <div class="stat-card reveal">
         <div class="stat-icon material-icons">calendar_month</div>
-        <div class="stat-num"><span data-count="4">0</span><span class="suffix">+</span></div>
+        <div class="stat-num"><span data-count="5">0</span><span class="suffix">+</span></div>
         <div class="stat-label">Years Experience</div>
       </div>
       <div class="stat-card reveal delay-1">
         <div class="stat-icon material-icons">account_tree</div>
-        <div class="stat-num"><span data-count="150">0</span><span class="suffix">+</span></div>
-        <div class="stat-label">Pipelines Upgraded</div>
+        <div class="stat-num"><span data-count="120">0</span><span class="suffix">+</span></div>
+        <div class="stat-label">Workflows Migrated</div>
       </div>
       <div class="stat-card reveal delay-2">
         <div class="stat-icon material-icons">savings</div>
@@ -1306,7 +1332,7 @@
       </div>
       <div class="stat-card reveal delay-2">
         <div class="stat-icon material-icons">analytics</div>
-        <div class="stat-num"><span data-count="10">0</span><span class="suffix">M+</span></div>
+        <div class="stat-num"><span data-count="1">0</span><span class="suffix">M+</span></div>
         <div class="stat-label">Records Analyzed</div>
       </div>
     </div>
@@ -1332,18 +1358,20 @@
             <span class="tl-date">Aug 2024 – Present</span>
           </div>
           <ul class="tl-bullets">
-            <li>Led the upgrade of <b>150+ Azure Data Factory pipelines</b> and Databricks DBR versions, and directed a
-              full metastore migration to <b>Unity Catalog</b>, enabling centralised governance, fine-grained access
-              control and better data discoverability across petabyte-scale datasets.</li>
-            <li>Architected and delivered a <b>live production Azure→GCP migration</b> as both technical lead and
-              individual contributor, using Google Cloud Storage and Databricks for <b>zero-disruption</b> data
-              continuity at scale.</li>
-            <li>Built automated frameworks for pipeline migration and data sanity checks, cutting validation turnaround
-              from <b>hours to minutes</b> and removing days of manual effort per release cycle.</li>
-            <li>Delivered a <b>20–40% reduction</b> in compute costs (DBU &amp; cloud spend) through systematic workload
-              rightsizing, cluster optimisation and resource governance.</li>
-            <li>Mentored and managed a team of <b>7+ engineers</b>, owning end-to-end delivery of data engineering
-              initiatives across cloud platforms.</li>
+            <li>Migrated <b>120+ production DAGs and workflows from Azure to GCP</b> across Databricks, PySpark and GCS,
+              while modernising <b>90+ pipelines from Hive Metastore to Unity Catalog</b>, achieving <b>95%+ validation
+                parity</b> and standardising governed data access across the platform.</li>
+            <li>Built migration automation frameworks, including a Unity Catalog accelerator generating updated DDLs for
+              <b>100–200+ tables per batch</b> and an Airflow-based dependency analyser that cut analysis time from
+              <b>~30 minutes to under 5 minutes per table (~85% faster)</b>.</li>
+            <li>Re-engineered Silver and Gold layers within a <b>Medallion architecture</b>, replacing legacy
+              dependencies across <b>20+ production datasets</b> while preserving downstream business logic and
+              improving cross-cloud reconciliation.</li>
+            <li>Built an automated Azure–GCP validation framework across <b>90+ migrated pipelines</b> with schema,
+              statistical, hash and business-rule checks plus <b>LLM-assisted test generation</b>; Spark tuning and
+              cluster rightsizing delivered a <b>20–40% reduction</b> in DBU and cloud spend.</li>
+            <li>Led a team of <b>7+ data engineers</b> across migration delivery, technical design, code reviews and
+              production RCA, while staying hands-on with Spark, SQL and Databricks.</li>
           </ul>
           <div class="tag-row">
             <span class="tag hl">Azure Databricks</span><span class="tag hl">ADF</span><span
@@ -1364,11 +1392,12 @@
             <span class="tl-date">Nov 2021 – Jul 2024</span>
           </div>
           <ul class="tl-bullets">
-            <li>Delivered a data warehouse handling <b>~50GB</b> of data for Risk &amp; Audit reporting products used by
-              <b>10+ stakeholders</b>, aggregating data from <b>7+ sources</b>.
+            <li>Delivered an enterprise Risk &amp; Audit data platform integrating <b>7+ source systems</b>, with Spark,
+              PySpark and SQL pipelines processing <b>50+ GB</b> of data for <b>10+ business stakeholders</b>.
             </li>
-            <li>Migrated an Audit Reporting Solution from <b>Hadoop to an in-house cloud platform</b>, achieving <b>50%
-                faster</b> data retrieval and <b>21% higher</b> processing efficiency.</li>
+            <li>Migrated a business-critical Audit Reporting platform from <b>Hadoop to an internal cloud
+                environment</b>, redesigning pipelines and automating validation to cut end-to-end processing from
+              <b>~13 hours to ~4 hours (~69% faster)</b>.</li>
             <li>Developed analytical solutions with SQL &amp; PySpark, contributing to a <b>15% improvement</b> in
               data-driven decision-making.</li>
             <li>Led root-cause analysis across <b>~1M+ records</b>, strengthening data integrity and enabling precise
@@ -1481,8 +1510,8 @@
         <div class="proj-body">
           <div class="proj-icon"><span class="material-icons">swap_horiz</span></div>
           <h3 class="proj-title">Azure → GCP Live Migration</h3>
-          <p class="proj-desc">Zero-disruption production migration using Google Cloud Storage &amp; Databricks,
-            architected end-to-end as tech lead &amp; individual contributor.</p>
+          <p class="proj-desc">Zero-disruption production migration of 120+ DAGs and workflows using Google Cloud
+            Storage &amp; Databricks, architected end-to-end as tech lead &amp; individual contributor.</p>
           <div class="proj-metric">
             <span class="big">0</span><span class="desc">downtime events · full data continuity</span>
           </div>
@@ -1494,12 +1523,12 @@
         <div class="proj-glow"></div>
         <div class="proj-body">
           <div class="proj-icon"><span class="material-icons">upgrade</span></div>
-          <h3 class="proj-title">150+ Pipeline Upgrade</h3>
-          <p class="proj-desc">Upgraded Azure Data Factory pipelines &amp; Databricks DBR versions across the estate,
-            automated migration and sanity-check frameworks cut turnaround from hours to minutes.</p>
-          <div class="proj-metric"><span class="big">150+</span><span class="desc">pipelines upgraded · days of manual
-              effort removed</span></div>
-          <div class="tag-row"><span class="tag hl">Azure ADF</span><span class="tag hl">Databricks</span><span
+          <h3 class="proj-title">Migration Automation Frameworks</h3>
+          <p class="proj-desc">Unity Catalog DDL accelerator for 100–200+ tables per batch and an Airflow dependency
+            analyser, plus an Azure–GCP validation framework with schema, hash and LLM-assisted checks.</p>
+          <div class="proj-metric"><span class="big">~85%</span><span class="desc">faster dependency analysis · 30 min
+              → under 5 min per table</span></div>
+          <div class="tag-row"><span class="tag hl">Airflow</span><span class="tag hl">Databricks</span><span
               class="tag">Automation</span></div>
         </div>
       </div>
@@ -1508,10 +1537,10 @@
         <div class="proj-body">
           <div class="proj-icon"><span class="material-icons">manage_accounts</span></div>
           <h3 class="proj-title">Unity Catalog Governance</h3>
-          <p class="proj-desc">Full metastore migration to Unity Catalog, centralised governance, fine-grained access
-            control and improved discoverability across petabyte-scale datasets.</p>
-          <div class="proj-metric"><span class="big" style="font-size:1.15rem; letter-spacing:1px;">PB</span><span
-              class="desc">scale · breakthrough governance &amp; discovery</span></div>
+          <p class="proj-desc">Modernised 90+ pipelines from Hive Metastore to Unity Catalog, with centralised
+            governance, fine-grained access control and improved discoverability across petabyte-scale datasets.</p>
+          <div class="proj-metric"><span class="big">95%+</span><span class="desc">validation parity across migrated
+              workloads</span></div>
           <div class="tag-row"><span class="tag hl">Unity Catalog</span><span class="tag hl">Delta Lake</span><span
               class="tag">Security</span></div>
         </div>
@@ -1562,6 +1591,22 @@
               Excellence awards</span></li>
           <li><span class="material-icons">star</span><span><b>Employee of the Month</b>, recognised for leadership and
               delivery at scale</span></li>
+        </ul>
+      </div>
+      <div class="info-card reveal delay-2">
+        <div class="ic-title">📜 Certifications</div>
+        <p></p>
+        <ul class="achieve-list">
+          <li><img src="databricks.png" alt="Databricks" class="cert-logo"><span><b>Databricks Certified Generative AI
+                Engineer Associate</b> · LLM fundamentals, RAG, prompt engineering &amp; LLM evaluation
+              <span class="cert-meta">Issued Jun 2026 · <a
+                  href="https://credentials.databricks.com/6c003cc0-efda-4a1b-ad73-7a4b600dfa5f" target="_blank"
+                  rel="noopener">Show credential ↗</a></span></span></li>
+          <li><img src="databricks.png" alt="Databricks" class="cert-logo"><span><b>Selling Genie to Business
+                Users</b> · Databricks AI/BI Genie
+              <span class="cert-meta">Issued Jun 2026 · <a
+                  href="https://credentials.databricks.com/a67d54cd-7488-4d6d-931c-6928e6635160" target="_blank"
+                  rel="noopener">Show credential ↗</a></span></span></li>
         </ul>
       </div>
     </div>
@@ -1616,8 +1661,9 @@
 
       /* ---------- Typewriter effect ---------- */
       const phrases = [
-        'Big Data Engineer',
+        'Senior Data Engineer',
         'Associate Manager · Data Engineering',
+        'Databricks Generative AI Engineer',
         'Azure · AWS · GCP',
         'Apache Spark · PySpark · Databricks',
         'Data Governance · Unity Catalog',
