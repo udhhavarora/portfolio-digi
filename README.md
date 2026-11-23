@@ -1,19 +1,19 @@
-# Udhhav Arora — Portfolio
+# Udhhav Arora | Portfolio
 
-Interactive, responsive portfolio for **Udhhav Arora**, Senior Data Engineer / Associate Manager at Tredence Analytics.
+Interactive, responsive portfolio for **Udhhav Arora**, Senior Data Engineer at Tredence Analytics.
 
-Dark, modern single-page site built with pure HTML, CSS & JavaScript — no frameworks, no build step.
+A scroll-led single-page site in white and navy, built with plain HTML, CSS and JavaScript plus GSAP
+(ScrollTrigger) for the scroll animations. No framework, no build step.
 
 ## Sections
 
-- Hero (typing animation, particle background)
-- Stats (animated counters)
-- Experience (timeline)
-- Skills
-- Featured Work / Impact
-- Education
-- Achievements
-- Certifications
+- Intro (typed greeting, portrait, live data-pipeline background)
+- What I do (pipeline that draws itself as you scroll)
+- Where next (shortcuts to the resume, experience, skills and achievements)
+- Impact (company-by-company outcomes with counting numbers)
+- Experience (swipeable card deck)
+- Skills (flip flashcards and an interactive tech ribbon)
+- Achievements (awards, certifications, education, side project)
 - Contact
 
 ## Deploy to GitHub Pages

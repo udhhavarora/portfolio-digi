@@ -4,12 +4,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Udhhav Arora — Senior Data Engineer</title>
+  <title>Udhhav Arora | Senior Data Engineer</title>
+  <script>document.documentElement.classList.add('js');</script>
   <meta name="description"
-    content="Portfolio of Udhhav Arora — Senior Data Engineer building scalable data platforms across Azure, AWS & GCP.">
+    content="Portfolio of Udhhav Arora | Senior Data Engineer building scalable data platforms across Azure, AWS & GCP.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://udhhavarora.github.io/portfolio-digi/">
-  <meta property="og:title" content="Udhhav Arora — Senior Data Engineer">
+  <meta property="og:title" content="Udhhav Arora | Senior Data Engineer">
   <meta property="og:description"
     content="5+ years building production data platforms on Databricks, Spark, Azure & GCP. Databricks certified Data Engineer & Generative AI Engineer.">
   <meta property="og:image" content="https://udhhavarora.github.io/portfolio-digi/profile.jpg">
@@ -19,20 +20,21 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap"
+    href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap"
     rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <style>
     :root {
-      --bg: #07070f;
-      --bg-soft: #0c0d1a;
-      --card: #11131f;
-      --card-border: #1e2133;
-      --txt: #e6e8f0;
-      --txt-dim: #9aa0b5;
-      --accent: #3b82f6;
-      --accent-2: #06b6d4;
-      --accent-3: #8b5cf6;
+      --bg: #ffffff;
+      --bg-soft: #f4f6fa;
+      --card: #ffffff;
+      --card-border: #e3e7ef;
+      --txt: #0b0d12;
+      --txt-dim: #4b5363;
+      --accent: #0f2557;
+      --accent-rgb: 15, 37, 87;
+      --accent-2: #1e4fa8;
+      --accent-3: #0a1a3d;
       --success: #22c55e;
       --warning: #f59e0b;
       --radius: 16px;
@@ -49,7 +51,7 @@
     }
 
     body {
-      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      font-family: 'IBM Plex Sans', -apple-system, BlinkMacSystemFont, sans-serif;
       background: var(--bg);
       color: var(--txt);
       line-height: 1.6;
@@ -57,7 +59,7 @@
     }
 
     ::selection {
-      background: rgba(59, 130, 246, .35);
+      background: rgba(var(--accent-rgb), .35);
     }
 
     a {
@@ -82,7 +84,7 @@
     }
 
     ::-webkit-scrollbar-thumb {
-      background: #2a2d42;
+      background: #c8cedb;
       border-radius: 5px;
     }
 
@@ -96,11 +98,11 @@
       inset: 0;
       z-index: -3;
       background:
-        radial-gradient(ellipse 80% 50% at 20% 20%, rgba(59,130,246,.09) 0%, transparent 50%),
-        radial-gradient(ellipse 60% 40% at 80% 80%, rgba(139,92,246,.07) 0%, transparent 50%),
-        radial-gradient(ellipse 70% 50% at 60% 30%, rgba(6,182,212,.06) 0%, transparent 50%),
-        linear-gradient(rgba(59,130,246,.025) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(59,130,246,.025) 1px, transparent 1px);
+        radial-gradient(ellipse 80% 50% at 20% 20%, rgba(var(--accent-rgb),.09) 0%, transparent 50%),
+        radial-gradient(ellipse 60% 40% at 80% 80%, rgba(var(--accent-rgb),.07) 0%, transparent 50%),
+        radial-gradient(ellipse 70% 50% at 60% 30%, rgba(var(--accent-rgb),.06) 0%, transparent 50%),
+        linear-gradient(rgba(var(--accent-rgb),.025) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(var(--accent-rgb),.025) 1px, transparent 1px);
       background-size: 100% 100%, 100% 100%, 100% 100%, 48px 48px, 48px 48px;
     }
 
@@ -119,15 +121,14 @@
     }
 
     nav.scrolled {
-      background: rgba(7, 7, 15, .9);
-      backdrop-filter: blur(12px);
-      -webkit-backdrop-filter: blur(12px);
-      border-bottom: 1px solid var(--card-border);
+      background: transparent;
+      backdrop-filter: blur(6px);
+      -webkit-backdrop-filter: blur(6px);
       padding: 12px 6vw;
     }
 
     .nav-logo {
-      font-weight: 800;
+      font-weight: 700;
       font-size: 1.15rem;
       letter-spacing: -.5px;
       color: var(--txt);
@@ -174,16 +175,16 @@
     .nav-cta {
       padding: 8px 18px;
       border-radius: 30px;
-      border: 1px solid var(--accent);
-      color: var(--accent) !important;
+      background: var(--accent);
+      color: #fff !important;
       font-weight: 600;
-      transition: all .3s;
+      transition: background .3s, box-shadow .3s;
+      display: inline-block;
     }
 
     .nav-cta:hover {
-      background: var(--accent);
-      color: #fff !important;
-      box-shadow: 0 0 20px rgba(59, 130, 246, .4);
+      background: var(--accent-3);
+      box-shadow: 0 8px 20px -6px rgba(var(--accent-rgb), .6);
     }
 
     .nav-cta::after {
@@ -262,7 +263,7 @@
     .overlay {
       position: fixed;
       inset: 0;
-      background: rgba(0, 0, 0, .6);
+      background: rgba(11, 13, 18, .35);
       z-index: 98;
       opacity: 0;
       pointer-events: none;
@@ -293,7 +294,7 @@
     }
 
     .section-label {
-      font-family: 'JetBrains Mono', monospace;
+      font-family: 'IBM Plex Mono', monospace;
       color: var(--accent-2);
       font-size: .85rem;
       letter-spacing: 2px;
@@ -304,7 +305,7 @@
 
     .section-head h2 {
       font-size: clamp(1.8rem, 4vw, 2.6rem);
-      font-weight: 800;
+      font-weight: 700;
     }
 
     .section-head p {
@@ -314,10 +315,7 @@
     }
 
     .gradient-text {
-      background: linear-gradient(90deg, var(--accent) 0%, var(--accent-2) 50%, var(--accent-3) 100%);
-      -webkit-background-clip: text;
-      background-clip: text;
-      -webkit-text-fill-color: transparent;
+      color: var(--accent);
     }
 
     /* ---------- Hero ---------- */
@@ -342,76 +340,90 @@
     .hero-inner {
       position: relative;
       z-index: 1;
-      text-align: center;
-      max-width: 900px;
-    }
-
-    .hero-top {
-      display: flex;
+      width: 100%;
+      display: grid;
+      grid-template-columns: minmax(0, 1.2fr) minmax(0, .8fr);
       align-items: center;
-      justify-content: center;
-      gap: 28px;
-      margin-bottom: 24px;
+      gap: 64px;
     }
 
-    .hero-text {
-      text-align: left;
+    .hero-copy {
+      grid-column: 1;
+      grid-row: 1;
     }
 
-    .hero-badge {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      padding: 6px 16px;
-      border-radius: 30px;
-      border: 1px solid var(--card-border);
-      background: rgba(17, 19, 31, .6);
-      font-size: .82rem;
-      color: var(--txt-dim);
-      margin-bottom: 12px;
-      font-family: 'JetBrains Mono', monospace;
+    /* ---------- Hero portrait ---------- */
+    .hero-portrait {
+      grid-column: 2;
+      grid-row: 1;
+      position: relative;
+      width: min(100%, 380px);
+      justify-self: center;
+      perspective: 1000px;
     }
 
-    .hero-badge .dot {
-      width: 8px;
-      height: 8px;
-      border-radius: 50%;
-      background: var(--success);
-      animation: blink 1.8s ease-in-out infinite;
+    .portrait-tilt {
+      position: relative;
+      transform-style: preserve-3d;
+      will-change: transform;
     }
 
-    @keyframes blink {
-
-      0%,
-      100% {
-        opacity: 1;
-      }
-
-      50% {
-        opacity: 0.3;
-      }
+    .portrait-offset {
+      position: absolute;
+      inset: 0;
+      border-radius: 28px;
+      border: 2px solid var(--accent);
+      transform: translate(18px, 18px);
+      background-image: radial-gradient(rgba(var(--accent-rgb), .35) 1.2px, transparent 1.2px);
+      background-size: 14px 14px;
     }
 
-    .hero-name {
-      font-size: clamp(2.8rem, 8vw, 5rem);
-      font-weight: 800;
-      letter-spacing: -2px;
-      margin-bottom: 8px;
+    .portrait-frame {
+      position: relative;
+      aspect-ratio: 4 / 5;
+      border-radius: 28px;
+      overflow: hidden;
+      background: var(--bg-soft);
+      clip-path: inset(0% 0% 0% 0% round 28px);
+      box-shadow: 0 30px 60px -24px rgba(var(--accent-rgb), .55);
     }
 
-    .type-wrap {
-      font-size: clamp(1.2rem, 3.4vw, 1.8rem);
-      font-weight: 600;
-      color: var(--accent-2);
-      min-height: 1.2em;
-      margin: 12px 0 20px;
-      font-family: 'JetBrains Mono', monospace;
+    .portrait-frame img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
     }
 
-    .type-wrap .cursor {
+    /* ---------- Intro typing ---------- */
+    .intro-type {
+      font-size: clamp(2rem, 4.3vw, 3.3rem);
+      font-weight: 700;
+      letter-spacing: -1.5px;
+      line-height: 1.12;
+      margin-bottom: 26px;
+    }
+
+    .type-line {
+      display: block;
+      min-height: 1.12em;
+    }
+
+    .js .type-line {
+      visibility: hidden;
+    }
+
+    .type-line .accent {
+      color: var(--accent);
+    }
+
+    .caret {
       display: inline-block;
-      width: 2px;
-      background: var(--accent-2);
+      width: 3px;
+      height: .9em;
+      margin-left: 4px;
+      vertical-align: -.08em;
+      background: var(--accent);
       animation: blink 1s step-end infinite;
     }
 
@@ -427,102 +439,27 @@
       }
     }
 
-    .hero-sub {
+    .intro-sub {
       color: var(--txt-dim);
-      font-size: 1.05rem;
-      max-width: 620px;
-      margin: 0 auto 30px;
+      font-size: 1.1rem;
+      max-width: 560px;
+      transition: opacity .8s ease, transform .8s ease;
     }
 
-    .hero-actions {
-      display: flex;
-      gap: 16px;
-      justify-content: center;
-      flex-wrap: wrap;
-      margin-bottom: 34px;
+    .js .intro-sub,
+    .js .scroll-hint {
+      opacity: 0;
+      transform: translateY(12px);
     }
 
-    .btn {
-      display: inline-flex;
-      align-items: center;
-      gap: 10px;
-      padding: 13px 28px;
-      border-radius: 30px;
-      font-weight: 600;
-      font-size: .95rem;
-      transition: all .3s;
-      cursor: pointer;
-      border: none;
-    }
-
-    .btn-primary {
-      background: linear-gradient(135deg, var(--accent), var(--accent-2));
-      color: #fff;
-      box-shadow: 0 4px 24px rgba(59, 130, 246, .35);
-    }
-
-    .btn-primary:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 8px 32px rgba(59, 130, 246, .5);
-    }
-
-    .btn-ghost {
-      background: transparent;
-      color: var(--txt);
-      border: 1px solid var(--card-border);
-    }
-
-    .btn-ghost:hover {
-      border-color: var(--accent);
-      color: var(--accent);
-      transform: translateY(-2px);
-    }
-
-    .btn .material-icons {
-      font-size: 18px;
-    }
-
-    .hero-contact {
-      display: flex;
-      gap: 14px;
-      justify-content: center;
-      flex-wrap: wrap;
-    }
-
-    .hero-contact a {
-      display: inline-flex;
-      align-items: center;
-      gap: 4px;
-      color: var(--txt-dim);
-      font-size: .9rem;
-      padding: 9px 16px;
-      border-radius: 30px;
-      border: 1px solid transparent;
-      transition: all .3s;
-    }
-
-    .hero-contact a:hover {
-      color: var(--accent-2);
-      border-color: var(--card-border);
-      background: rgba(17, 19, 31, .6);
-    }
-
-    .hero-contact .material-icons {
-      font-size: 17px;
-    }
-
-    .hero-photo {
-      width: 120px;
-      height: 120px;
-      border-radius: 50%;
-      object-fit: cover;
-      object-position: center;
-      border: 3px solid var(--card-border);
-      box-shadow: 0 0 0 4px rgba(59, 130, 246, .2);
-      flex-shrink: 0;
+    .js .intro-done .intro-sub,
+    .js .intro-done .scroll-hint {
+      opacity: 1;
+      transform: none;
     }
 
     .scroll-hint {
+      text-decoration: none;
       position: absolute;
       bottom: 32px;
       left: 50%;
@@ -549,117 +486,136 @@
       }
     }
 
-    /* ---------- Stats ---------- */
-    #stats {
-      padding-top: 40px;
-      padding-bottom: 40px;
+    /* ---------- Experience deck ----------
+       Without GSAP the cards are a plain list; with it (.is-deck) they stack into a deck */
+    .exp-deck {
+      display: grid;
+      gap: 24px;
     }
 
-    .stats-grid {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 20px;
-    }
-
-    .stat-card {
-      flex: 1 1 160px;
-      max-width: 220px;
-      background: var(--card);
-      border: 1px solid var(--card-border);
-      border-radius: var(--radius);
-      padding: 26px 18px;
-      text-align: center;
+    .is-deck .exp-deck {
       position: relative;
-      overflow: hidden;
-      transition: transform .3s, border-color .3s;
+      display: block;
+      touch-action: pan-y;
+      user-select: none;
+      -webkit-user-select: none;
     }
 
-    .stat-card:hover {
-      transform: translateY(-4px);
-      border-color: var(--accent);
-    }
-
-    .stat-card::before {
-      content: '';
+    .is-deck .exp-card {
       position: absolute;
       top: 0;
       left: 0;
       right: 0;
-      height: 2px;
-      background: linear-gradient(90deg, var(--accent), var(--accent-2));
+      transform-origin: 50% 100%;
+      transition: box-shadow .3s;
+      box-shadow: 0 18px 40px -28px rgba(var(--accent-rgb), .5);
+      cursor: grab;
+    }
+
+    .is-deck .exp-card:active {
+      cursor: grabbing;
+    }
+
+    .is-deck .exp-card:hover {
+      transform: none;
+    }
+
+    /* Cards further back are blank sheets so their text never shows through */
+    .exp-card > * {
+      transition: opacity .35s;
+    }
+
+    .exp-card.is-back > * {
       opacity: 0;
-      transition: opacity .3s;
     }
 
-    .stat-card:hover::before {
-      opacity: 1;
-    }
-
-    .stat-num {
-      font-size: 2.2rem;
-      font-weight: 800;
-      color: var(--txt);
-      font-family: 'JetBrains Mono', monospace;
-    }
-
-    .stat-num .suffix {
-      color: var(--accent-2);
-    }
-
-    .stat-label {
+    .exp-index {
+      display: block;
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: .75rem;
+      letter-spacing: 1.5px;
       color: var(--txt-dim);
-      font-size: .82rem;
-      margin-top: 6px;
+      margin-bottom: 10px;
     }
 
-    .stat-icon {
-      color: var(--accent-2);
-      font-size: 26px;
-      margin-bottom: 8px;
+    .deck-controls {
+      display: none;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 26px;
     }
 
-    /* ---------- Experience Timeline ---------- */
-    .timeline {
-      position: relative;
-      padding-left: 28px;
+    .is-deck .deck-controls {
+      display: flex;
     }
 
-    .timeline::before {
-      content: '';
-      position: absolute;
-      left: 8px;
-      top: 4px;
-      bottom: 4px;
-      width: 2px;
-      background: linear-gradient(180deg, var(--accent), var(--accent-2), var(--accent-3));
-    }
-
-    .tl-item {
-      position: relative;
-      margin-bottom: 46px;
-    }
-
-    .tl-dot {
-      position: absolute;
-      left: -28px;
-      top: 5px;
-      width: 18px;
-      height: 18px;
+    .deck-btn {
+      width: 42px;
+      height: 42px;
       border-radius: 50%;
-      background: var(--bg);
-      border: 3px solid var(--accent);
-      box-shadow: 0 0 0 4px rgba(59, 130, 246, .15);
+      border: 1.5px solid var(--accent);
+      background: var(--card);
+      color: var(--accent);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: background .25s, color .25s;
     }
 
-    .tl-item:nth-child(2) .tl-dot {
-      border-color: var(--accent-2);
-      box-shadow: 0 0 0 4px rgba(6, 182, 212, .15);
+    .deck-btn:hover,
+    .deck-btn:focus-visible {
+      background: var(--accent);
+      color: #fff;
+      outline: none;
     }
 
-    .tl-item:nth-child(3) .tl-dot {
-      border-color: var(--accent-3);
-      box-shadow: 0 0 0 4px rgba(139, 92, 246, .15);
+    .deck-btn .material-icons {
+      font-size: 20px;
+    }
+
+    .deck-tab {
+      display: inline-flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 1px;
+      padding: 8px 16px;
+      border-radius: 12px;
+      border: 1px solid var(--card-border);
+      background: var(--card);
+      color: var(--txt-dim);
+      font: 500 .85rem 'IBM Plex Sans', sans-serif;
+      cursor: pointer;
+      transition: background .25s, color .25s, border-color .25s;
+    }
+
+    .deck-tab b {
+      color: var(--txt);
+      font-weight: 600;
+      transition: color .25s;
+    }
+
+    .deck-tab span {
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: .72rem;
+    }
+
+    .deck-tab:hover,
+    .deck-tab:focus-visible {
+      border-color: var(--accent);
+      outline: none;
+    }
+
+    .deck-tab.is-active {
+      background: var(--accent);
+      border-color: var(--accent);
+      color: rgba(255, 255, 255, .75);
+    }
+
+    .deck-tab.is-active b {
+      color: #fff;
     }
 
     .tl-card {
@@ -672,7 +628,7 @@
 
     .tl-card:hover {
       transform: translateX(4px);
-      box-shadow: 0 8px 40px rgba(59, 130, 246, .12);
+      box-shadow: 0 8px 40px rgba(var(--accent-rgb), .12);
     }
 
     .tl-top {
@@ -695,10 +651,10 @@
     }
 
     .tl-date {
-      font-family: 'JetBrains Mono', monospace;
+      font-family: 'IBM Plex Mono', monospace;
       font-size: .8rem;
       color: var(--txt-dim);
-      background: rgba(17, 19, 31, .8);
+      background: rgba(255, 255, 255, .8);
       border: 1px solid var(--card-border);
       padding: 4px 12px;
       border-radius: 20px;
@@ -753,12 +709,12 @@
       border-radius: 20px;
       border: 1px solid var(--card-border);
       color: var(--txt-dim);
-      background: rgba(17, 19, 31, .5);
-      font-family: 'JetBrains Mono', monospace;
+      background: rgba(255, 255, 255, .5);
+      font-family: 'IBM Plex Mono', monospace;
     }
 
     .tag.hl {
-      border-color: rgba(59, 130, 246, .4);
+      border-color: rgba(var(--accent-rgb), .4);
       color: var(--accent-2);
     }
 
@@ -770,22 +726,109 @@
       gap: 22px;
     }
 
+    /* ---------- Skill flashcards ----------
+       Front: category and tool count. Back: the tools. Flips on hover (mouse) or tap/Enter. */
     .skill-card {
       flex: 1 1 280px;
       max-width: 360px;
-      background: var(--card);
-      border: 1px solid var(--card-border);
+      height: 300px;
+      perspective: 1200px;
+      cursor: pointer;
       border-radius: var(--radius);
-      padding: 24px;
-      transition: transform .3s, border-color .3s;
+      outline: none;
     }
 
-    .skill-card:hover {
-      transform: translateY(-4px);
+    .flip-inner {
+      position: relative;
+      height: 100%;
+      transform-style: preserve-3d;
+      transition: transform .8s cubic-bezier(.2, .75, .2, 1);
+    }
+
+    .skill-card.is-peeking .flip-inner {
+      transform: rotateY(28deg);
+    }
+
+    .skill-card.is-flipped .flip-inner {
+      transform: rotateY(180deg);
+    }
+
+    @media (hover: hover) {
+      .skill-card:hover .flip-inner {
+        transform: rotateY(180deg);
+      }
+    }
+
+    .flip-face {
+      position: absolute;
+      inset: 0;
+      border-radius: var(--radius);
+      border: 1px solid var(--card-border);
+      background: var(--card);
+      padding: 24px;
+      backface-visibility: hidden;
+      -webkit-backface-visibility: hidden;
+      box-shadow: 0 16px 36px -28px rgba(var(--accent-rgb), .55);
+    }
+
+    .skill-card:focus-visible .flip-face {
       border-color: var(--accent);
     }
 
-    .skill-card h3 {
+    .flip-front {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .flip-icon {
+      width: 52px;
+      height: 52px;
+      border-radius: 14px;
+      background: var(--accent);
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 26px;
+      margin-bottom: auto;
+    }
+
+    .flip-front h3 {
+      font-size: 1.35rem;
+      font-weight: 700;
+      margin-bottom: 6px;
+    }
+
+    .flip-count {
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: .8rem;
+      color: var(--accent-2);
+    }
+
+    .flip-hint {
+      position: absolute;
+      top: 24px;
+      right: 24px;
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      font-size: .75rem;
+      color: var(--txt-dim);
+    }
+
+    .flip-hint .material-icons {
+      font-size: 15px;
+    }
+
+    .flip-back {
+      transform: rotateY(180deg);
+      background: var(--bg-soft);
+      border-color: rgba(var(--accent-rgb), .25);
+      overflow: auto;
+    }
+
+    .flip-back h3 {
       display: flex;
       align-items: center;
       gap: 10px;
@@ -794,9 +837,19 @@
       color: var(--txt);
     }
 
-    .skill-card h3 .material-icons {
+    .flip-back h3 .material-icons {
       color: var(--accent-2);
       font-size: 20px;
+    }
+
+    .flip-back .skill-chips {
+      gap: 7px;
+    }
+
+    .flip-back .chip {
+      padding: 5px 11px;
+      font-size: .8rem;
+      background: var(--card);
     }
 
     .skill-chips {
@@ -809,8 +862,8 @@
       padding: 6px 14px;
       border-radius: 8px;
       font-size: .82rem;
-      background: rgba(59, 130, 246, .08);
-      border: 1px solid rgba(59, 130, 246, .2);
+      background: rgba(var(--accent-rgb), .08);
+      border: 1px solid rgba(var(--accent-rgb), .2);
       color: var(--txt-dim);
       transition: all .3s;
       cursor: default;
@@ -821,108 +874,7 @@
       color: #fff;
       border-color: var(--accent);
       transform: translateY(-2px);
-      box-shadow: 0 4px 16px rgba(59, 130, 246, .35);
-    }
-
-    /* ---------- Projects ---------- */
-    .proj-grid {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 22px;
-    }
-
-    .proj-card {
-      flex: 1 1 300px;
-      max-width: 360px;
-      position: relative;
-      border-radius: var(--radius);
-      overflow: hidden;
-      background: var(--card);
-      border: 1px solid var(--card-border);
-      transition: transform .35s, box-shadow .35s, border-color .35s;
-    }
-
-    .proj-card:hover {
-      transform: translateY(-6px);
-      box-shadow: 0 12px 48px rgba(59, 130, 246, .18);
-      border-color: rgba(59, 130, 246, .5);
-    }
-
-    .proj-glow {
-      position: absolute;
-      top: -60%;
-      left: -20%;
-      width: 140%;
-      height: 80%;
-      background: linear-gradient(120deg, transparent, rgba(59, 130, 246, .18), transparent);
-      transform: rotate(4deg);
-      transition: top .6s ease;
-      pointer-events: none;
-    }
-
-    .proj-card:hover .proj-glow {
-      top: -10%;
-    }
-
-    .proj-body {
-      padding: 26px;
-      position: relative;
-    }
-
-    .proj-icon {
-      width: 48px;
-      height: 48px;
-      border-radius: 12px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin-bottom: 16px;
-      font-size: 24px;
-      background: linear-gradient(135deg, rgba(59, 130, 246, .15), rgba(6, 182, 212, .15));
-      border: 1px solid rgba(59, 130, 246, .25);
-    }
-
-    .proj-icon .material-icons {
-      color: var(--accent-2);
-    }
-
-    .proj-title {
-      font-size: 1.1rem;
-      font-weight: 700;
-      margin-bottom: 8px;
-    }
-
-    .proj-desc {
-      color: var(--txt-dim);
-      font-size: .92rem;
-      margin-bottom: 16px;
-    }
-
-    .proj-metric {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      margin-top: 14px;
-      padding-top: 14px;
-      border-top: 1px dashed var(--card-border);
-    }
-
-    .proj-metric .big {
-      font-family: 'JetBrains Mono', monospace;
-      font-size: 1.4rem;
-      font-weight: 800;
-      white-space: nowrap;
-      flex-shrink: 0;
-      background: linear-gradient(90deg, var(--accent), var(--accent-2));
-      -webkit-background-clip: text;
-      background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
-
-    .proj-metric .desc {
-      color: var(--txt-dim);
-      font-size: .85rem;
+      box-shadow: 0 4px 16px rgba(var(--accent-rgb), .35);
     }
 
     /* ---------- Education / Achievements ---------- */
@@ -1032,7 +984,7 @@
     .contact-card:hover {
       transform: translateY(-4px);
       border-color: var(--accent);
-      box-shadow: 0 8px 32px rgba(59, 130, 246, .15);
+      box-shadow: 0 8px 32px rgba(var(--accent-rgb), .15);
     }
 
     .contact-card .c-icon {
@@ -1043,8 +995,8 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      background: rgba(59, 130, 246, .12);
-      border: 1px solid rgba(59, 130, 246, .25);
+      background: rgba(var(--accent-rgb), .12);
+      border: 1px solid rgba(var(--accent-rgb), .25);
     }
 
     .contact-card .c-icon .material-icons {
@@ -1112,12 +1064,12 @@
       border-radius: 50%;
       border: none;
       cursor: pointer;
-      background: linear-gradient(135deg, var(--accent), var(--accent-2));
+      background: var(--accent);
       color: #fff;
       display: flex;
       align-items: center;
       justify-content: center;
-      box-shadow: 0 6px 24px rgba(59, 130, 246, .4);
+      box-shadow: 0 6px 24px rgba(var(--accent-rgb), .4);
       opacity: 0;
       pointer-events: none;
       transform: translateY(16px);
@@ -1132,7 +1084,7 @@
 
     #backTop:hover {
       transform: translateY(-4px);
-      box-shadow: 0 10px 32px rgba(59, 130, 246, .55);
+      box-shadow: 0 10px 32px rgba(var(--accent-rgb), .55);
     }
 
     /* ---------- Reveal animations ---------- */
@@ -1157,6 +1109,442 @@
 
     .reveal.delay-3 {
       transition-delay: .3s;
+    }
+
+    /* ---------- Active nav link ---------- */
+    .nav-links a.active {
+      color: var(--accent);
+    }
+
+    .nav-links a.active::after {
+      width: 100%;
+    }
+
+    /* ---------- Stack ribbon ---------- */
+    .stack-ribbon {
+      background: var(--bg-soft);
+      border-top: 1px solid var(--card-border);
+      border-bottom: 1px solid var(--card-border);
+      padding: 26px 0 18px;
+      margin: 20px 0;
+      user-select: none;
+      -webkit-user-select: none;
+    }
+
+    .ribbon-row {
+      overflow-x: auto;
+      scrollbar-width: none;
+      padding: 6px 0;
+      -webkit-mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
+      mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
+    }
+
+    .ribbon-row::-webkit-scrollbar {
+      display: none;
+    }
+
+    .stack-ribbon.is-animated .ribbon-row {
+      overflow: hidden;
+    }
+
+    .ribbon-track {
+      display: flex;
+      gap: 12px;
+      width: max-content;
+      padding-right: 12px;
+    }
+
+    .tech {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 11px 20px;
+      border-radius: 999px;
+      border: 1px solid var(--card-border);
+      background: var(--card);
+      color: var(--txt);
+      font: 600 1rem 'IBM Plex Sans', sans-serif;
+      white-space: nowrap;
+      cursor: pointer;
+      transition: background .25s, color .25s, border-color .25s, box-shadow .25s, transform .25s;
+    }
+
+    .tech-dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 2px;
+      background: var(--accent);
+      transition: background .25s, transform .25s;
+    }
+
+    .tech:hover,
+    .tech:focus-visible,
+    .tech.is-active {
+      background: var(--accent);
+      border-color: var(--accent);
+      color: #fff;
+      transform: translateY(-2px);
+      box-shadow: 0 10px 22px -10px rgba(var(--accent-rgb), .7);
+      outline: none;
+    }
+
+    .tech:hover .tech-dot,
+    .tech:focus-visible .tech-dot,
+    .tech.is-active .tech-dot {
+      background: #fff;
+      transform: rotate(45deg);
+    }
+
+    .ribbon-caption {
+      text-align: center;
+      margin: 14px 22px 0;
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: .85rem;
+      color: var(--txt-dim);
+      min-height: 1.4em;
+    }
+
+    .ribbon-caption b {
+      color: var(--accent);
+      font-weight: 600;
+    }
+
+    /* ---------- What I do: scroll-drawn pipeline ---------- */
+    .flow-wrap {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 90px 0 40px;
+    }
+
+    .flow {
+      position: relative;
+      margin-top: 10px;
+    }
+
+    .flow-rail {
+      position: absolute;
+      left: 10%;
+      right: 10%;
+      top: 27px;
+      height: 2px;
+      background: var(--card-border);
+    }
+
+    /* --p (0 to 1) is how far the pipeline has been drawn; packets only show on the drawn part */
+    .flow-fill {
+      position: absolute;
+      inset: 0;
+      background: var(--accent);
+      clip-path: inset(0 calc((1 - var(--p, 1)) * 100%) 0 0);
+    }
+
+    .flow-packet {
+      position: absolute;
+      top: -3px;
+      left: 0;
+      width: 8px;
+      height: 8px;
+      border-radius: 2px;
+      background: var(--accent);
+      box-shadow: 0 0 0 3px var(--bg);
+      animation: packet-across 4s linear infinite;
+    }
+
+    .flow-packet:nth-child(2) { animation-delay: -.8s; }
+    .flow-packet:nth-child(3) { animation-delay: -1.6s; }
+    .flow-packet:nth-child(4) { animation-delay: -2.4s; }
+    .flow-packet:nth-child(5) { animation-delay: -3.2s; }
+
+    @keyframes packet-across {
+      from { left: 0; }
+      to { left: calc(100% - 8px); }
+    }
+
+    @keyframes packet-down {
+      from { top: 0; }
+      to { top: calc(100% - 8px); }
+    }
+
+    .flow-steps {
+      position: relative;
+      list-style: none;
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 20px;
+    }
+
+    .flow-step {
+      text-align: center;
+      padding: 0 6px;
+    }
+
+    .flow-node {
+      width: 56px;
+      height: 56px;
+      margin: 0 auto 16px;
+      border-radius: 16px;
+      border: 1.5px solid var(--card-border);
+      background: var(--card);
+      color: var(--txt-dim);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: background .5s, color .5s, border-color .5s, transform .5s;
+    }
+
+    .flow-num {
+      display: block;
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: .75rem;
+      letter-spacing: 1.5px;
+      color: var(--accent-2);
+    }
+
+    .flow-step h3 {
+      font-size: 1.2rem;
+      margin: 2px 0 8px;
+    }
+
+    .flow-step p {
+      color: var(--txt-dim);
+      font-size: .92rem;
+    }
+
+    .flow-step h3,
+    .flow-step p,
+    .flow-num {
+      transition: opacity .5s, transform .5s;
+    }
+
+    /* While the scroll drives it, steps wait in a muted state until the line reaches them */
+    .flow.is-live .flow-step:not(.is-on) .flow-num,
+    .flow.is-live .flow-step:not(.is-on) h3,
+    .flow.is-live .flow-step:not(.is-on) p {
+      opacity: .25;
+      transform: translateY(8px);
+    }
+
+    .flow-step.is-on .flow-node,
+    .flow:not(.is-live) .flow-node {
+      background: var(--accent);
+      border-color: var(--accent);
+      color: #fff;
+    }
+
+    .flow-step.is-on .flow-node {
+      transform: scale(1.06);
+    }
+
+    #particles {
+      transition: opacity .6s;
+    }
+
+    #particles.is-muted {
+      opacity: .12;
+    }
+
+    /* ---------- Where next tiles ---------- */
+    .explore-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 18px;
+    }
+
+    .explore-tile {
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      min-height: 190px;
+      padding: 26px;
+      border-radius: 18px;
+      border: 1.5px solid var(--accent);
+      background: var(--card);
+      color: var(--txt);
+      text-decoration: none;
+      isolation: isolate;
+      transition: color .4s;
+    }
+
+    /* Navy fills the tile from the bottom on hover */
+    .explore-tile::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      z-index: -1;
+      background: var(--accent);
+      transform: scaleY(0);
+      transform-origin: bottom;
+      transition: transform .45s cubic-bezier(.65, 0, .35, 1);
+    }
+
+    .explore-tile:hover,
+    .explore-tile:focus-visible {
+      color: #fff;
+      outline: none;
+    }
+
+    .explore-tile:hover::before,
+    .explore-tile:focus-visible::before {
+      transform: scaleY(1);
+    }
+
+    .tile-num {
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: .8rem;
+      letter-spacing: 1.5px;
+      color: var(--accent-2);
+      transition: color .4s;
+    }
+
+    .tile-label {
+      font-size: 1.25rem;
+      font-weight: 700;
+      line-height: 1.25;
+      margin-top: auto;
+    }
+
+    .tile-sub {
+      font-size: .88rem;
+      color: var(--txt-dim);
+      transition: color .4s;
+    }
+
+    .explore-tile:hover .tile-num,
+    .explore-tile:hover .tile-sub,
+    .explore-tile:focus-visible .tile-num,
+    .explore-tile:focus-visible .tile-sub {
+      color: rgba(255, 255, 255, .75);
+    }
+
+    .tile-icon {
+      position: absolute;
+      top: 22px;
+      right: 22px;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      border: 1.5px solid currentColor;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 20px;
+      transition: transform .45s cubic-bezier(.65, 0, .35, 1);
+    }
+
+    .explore-tile:hover .tile-icon {
+      transform: translateX(4px) rotate(-45deg);
+    }
+
+    .explore-tile[download]:hover .tile-icon {
+      transform: translateY(4px);
+    }
+
+    /* ---------- Impact panels ---------- */
+    /* Scrolls sideways by hand without GSAP; on desktop GSAP pins it and drives the scroll */
+    .impact-viewport {
+      overflow-x: auto;
+      margin: 0 -6vw;
+      padding: 0 6vw 10px;
+    }
+
+    .impact-viewport.is-driven {
+      overflow: hidden;
+      -webkit-mask-image: linear-gradient(90deg, transparent, #000 5%, #000 95%, transparent);
+      mask-image: linear-gradient(90deg, transparent, #000 5%, #000 95%, transparent);
+    }
+
+    #impact {
+      padding-top: 100px;
+    }
+
+    .impact-track {
+      display: flex;
+      gap: 28px;
+      width: max-content;
+    }
+
+    .impact-panel {
+      width: min(80vw, 860px);
+      padding: 40px;
+      border-radius: 20px;
+      border: 1px solid var(--card-border);
+      background: var(--card);
+      box-shadow: 0 20px 44px -34px rgba(var(--accent-rgb), .6);
+    }
+
+    .impact-meta {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 8px;
+      margin-bottom: 14px;
+    }
+
+    .impact-company {
+      font-weight: 700;
+      color: var(--accent);
+      font-size: 1.05rem;
+    }
+
+    .impact-role {
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: .78rem;
+      color: var(--txt-dim);
+    }
+
+    .impact-headline {
+      font-size: clamp(1.35rem, 2.6vw, 1.9rem);
+      line-height: 1.25;
+      max-width: 720px;
+      margin-bottom: 30px;
+    }
+
+    .impact-metrics {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 22px;
+      border-top: 1px solid var(--card-border);
+      padding-top: 24px;
+    }
+
+    .metric-num {
+      display: block;
+      font-size: clamp(1.8rem, 3.4vw, 2.6rem);
+      font-weight: 700;
+      color: var(--accent);
+      letter-spacing: -1px;
+      line-height: 1.1;
+    }
+
+    .metric-label {
+      display: block;
+      margin-top: 6px;
+      font-size: .88rem;
+      color: var(--txt-dim);
+    }
+
+    .impact-points {
+      border-top: 1px solid var(--card-border);
+      padding: 24px 0 0 20px;
+      color: var(--txt-dim);
+      max-width: 720px;
+    }
+
+    .impact-points li {
+      margin-bottom: 10px;
+    }
+
+    .impact-points li::marker {
+      color: var(--accent);
+    }
+
+    a.info-card {
+      color: inherit;
+      text-decoration: none;
     }
 
     /* ---------- Responsive ---------- */
@@ -1186,13 +1574,100 @@
         padding: 16px 22px;
       }
 
-      .hero-top {
-        flex-direction: column;
-        gap: 16px;
+      .hero-inner {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        text-align: center;
       }
 
-      .hero-text {
-        text-align: center;
+      .hero-portrait {
+        grid-column: 1;
+        width: min(70vw, 280px);
+      }
+
+      .hero-copy {
+        grid-column: 1;
+        grid-row: 2;
+      }
+
+      .intro-sub {
+        margin: 0 auto;
+      }
+
+      /* What I do: the rail runs down the left, steps stack */
+      .flow-rail {
+        left: 27px;
+        right: auto;
+        top: 28px;
+        bottom: 28px;
+        width: 2px;
+        height: auto;
+      }
+
+      .flow-fill {
+        clip-path: inset(0 0 calc((1 - var(--p, 1)) * 100%) 0);
+      }
+
+      .flow-packet {
+        left: -3px;
+        top: 0;
+        animation-name: packet-down;
+      }
+
+      .flow-steps {
+        grid-template-columns: 1fr;
+        gap: 34px;
+      }
+
+      .flow-step {
+        display: grid;
+        grid-template-columns: 56px 1fr;
+        column-gap: 18px;
+        text-align: left;
+        padding: 0;
+      }
+
+      .flow-node {
+        grid-row: span 3;
+        margin: 0;
+      }
+
+      .flow-step > :not(.flow-node) {
+        grid-column: 2;
+      }
+
+      .flow-wrap {
+        min-height: 0;
+        padding: 60px 0 20px;
+      }
+
+      .flow-step p {
+        margin: 0;
+      }
+
+      .explore-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .impact-viewport {
+        margin: 0;
+        padding: 0;
+        overflow: visible;
+      }
+
+      .impact-track {
+        flex-direction: column;
+        width: auto;
+        gap: 18px;
+      }
+
+      .impact-panel {
+        width: 100%;
+        padding: 26px;
+      }
+
+      .impact-metrics {
+        grid-template-columns: 1fr 1fr;
       }
 
       nav.scrolled {
@@ -1203,7 +1678,7 @@
         flex-direction: column;
       }
 
-      .hero-name {
+      .intro-type {
         letter-spacing: -1px;
       }
     }
@@ -1233,12 +1708,11 @@
   <nav id="nav">
     <a href="#hero" class="nav-logo">UD<span>.</span></a>
     <ul class="nav-links">
-      <li><a href="#hero">Home</a></li>
-      <li><a href="#stats">Overview</a></li>
+      <li><a href="#what-i-do">What I do</a></li>
+      <li><a href="#impact">Impact</a></li>
       <li><a href="#experience">Experience</a></li>
       <li><a href="#skills">Skills</a></li>
-      <li><a href="#projects">Impact</a></li>
-      <li><a href="#education">Education</a></li>
+      <li><a href="#achievements">Achievements</a></li>
       <li><a href="#contact">Contact</a></li>
       <li><a href="https://github.com/udhhavarora" target="_blank" rel="noopener" style="display:flex;align-items:center;gap:4px;"><svg
             xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
@@ -1253,87 +1727,177 @@
 
   <!-- Mobile menu -->
   <div id="mobileMenu">
-    <a href="#hero">Home</a>
-    <a href="#stats">Overview</a>
+    <a href="#what-i-do">What I do</a>
+    <a href="#impact">Impact</a>
     <a href="#experience">Experience</a>
     <a href="#skills">Skills</a>
-    <a href="#projects">Impact</a>
-    <a href="#education">Education</a>
+    <a href="#achievements">Achievements</a>
     <a href="#contact">Contact</a>
     <a href="https://github.com/udhhavarora" target="_blank" rel="noopener">GitHub</a>
     <a href="mailto:udhhavarora@gmail.com" style="color: var(--accent-2); border: none; margin-top: 8px;">Hire Me →</a>
   </div>
 
-  <!-- ================= HERO ================= -->
+  <!-- ================= INTRO ================= -->
   <section id="hero">
     <div class="hero-inner">
-      <div class="hero-top">
-        <img src="profile.jpg" alt="Udhhav Arora" class="hero-photo reveal" width="120" height="120">
-        <div class="hero-text">
-          <div class="hero-badge reveal"><span class="dot"></span> Available for Data Engineering roles</div>
-          <h1 class="hero-name reveal delay-1">Udhhav <span class="gradient-text">Arora</span></h1>
+      <figure class="hero-portrait" id="heroPortrait">
+        <div class="portrait-tilt">
+          <span class="portrait-offset" aria-hidden="true"></span>
+          <div class="portrait-frame">
+            <img src="portrait.jpg" alt="Udhhav Arora" width="602" height="752">
+          </div>
         </div>
-      </div>
-      <div class="type-wrap reveal delay-2"><span id="typeText"></span></div>
-      <p class="hero-sub reveal delay-2">Senior Data Engineer with <b>5+ years</b> designing and scaling cloud data
-        platforms across <b>Azure, AWS &amp; GCP</b>, leading migrations, governance rollouts and cost optimisation for
-        enterprise clients in banking &amp; consulting. <b>Databricks certified</b> in Data Engineering and Generative AI.</p>
-      <div class="hero-actions reveal delay-3">
-        <a href="#projects" class="btn btn-primary"><span class="material-icons">rocket_launch</span> View My Work</a>
-        <a href="Udhhav_Arora_Senior_Data_Engineer_CV.pdf" download class="btn btn-ghost"><span
-            class="material-icons">description</span> Get Resume</a>
-      </div>
-      <div class="hero-contact reveal delay-3">
-        <a href="mailto:udhhavarora@gmail.com"><span class="material-icons">mail</span> udhhavarora@gmail.com</a>
-        <a href="https://linkedin.com/in/udhhav-arora" target="_blank" rel="noopener"><svg
-            xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24"
-            fill="currentColor" style="vertical-align:middle; margin-right:6px;"><path
-              d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>LinkedIn</a>
-        <a href="https://github.com/udhhavarora" target="_blank" rel="noopener"><svg
-            xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24"
-            fill="currentColor" style="vertical-align:middle; margin-right:6px;"><path
-              d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>GitHub</a>
-        <a href="tel:+917397315323"><span class="material-icons">call</span> +91 7397 315323</a>
+      </figure>
+      <div class="hero-copy">
+        <h1 class="intro-type">
+          <span class="type-line"><span class="seg">Hello, I'm Udhhav Arora.</span></span>
+          <span class="type-line"><span class="seg">I'm a </span><span class="seg accent">Senior Data
+              Engineer</span><span class="seg">.</span></span>
+        </h1>
+        <p class="intro-sub">5+ years building cloud data platforms on Databricks, Spark, Azure and GCP for banking
+          and consulting clients. Databricks certified in Data Engineering and Generative AI.</p>
       </div>
     </div>
-    <div class="scroll-hint">
-      <span>scroll to explore</span>
+    <a class="scroll-hint" href="#what-i-do">
+      <span>Scroll to see what I do</span>
       <span class="material-icons">keyboard_arrow_down</span>
+    </a>
+  </section>
+
+  <!-- ================= WHAT I DO ================= -->
+  <section id="what-i-do">
+    <div class="flow-wrap">
+      <div class="section-head">
+        <span class="section-label">01 · What I do</span>
+        <h2>I build the pipelines that turn <span class="gradient-text">raw data</span> into decisions.</h2>
+        <p>From the first source system to the last dashboard, this is the work I own end to end.</p>
+      </div>
+      <div class="flow" id="flow">
+        <div class="flow-rail" aria-hidden="true">
+          <div class="flow-fill"><span class="flow-packet"></span><span class="flow-packet"></span><span
+              class="flow-packet"></span><span class="flow-packet"></span><span class="flow-packet"></span></div>
+        </div>
+        <ol class="flow-steps">
+          <li class="flow-step">
+            <span class="flow-node"><span class="material-icons">input</span></span>
+            <span class="flow-num">01</span>
+            <h3>Ingest</h3>
+            <p>Bring data in from 7+ source systems: event streams, databases, APIs and file drops.</p>
+          </li>
+          <li class="flow-step">
+            <span class="flow-node"><span class="material-icons">swap_horiz</span></span>
+            <span class="flow-num">02</span>
+            <h3>Migrate</h3>
+            <p>Move live platforms between clouds: 150+ production workflows from Azure to GCP.</p>
+          </li>
+          <li class="flow-step">
+            <span class="flow-node"><span class="material-icons">layers</span></span>
+            <span class="flow-num">03</span>
+            <h3>Model</h3>
+            <p>Medallion layers and star schemas that give the business one consistent model.</p>
+          </li>
+          <li class="flow-step">
+            <span class="flow-node"><span class="material-icons">verified_user</span></span>
+            <span class="flow-num">04</span>
+            <h3>Govern</h3>
+            <p>Unity Catalog access control and 95%+ validation parity on every migration.</p>
+          </li>
+          <li class="flow-step">
+            <span class="flow-node"><span class="material-icons">insights</span></span>
+            <span class="flow-num">05</span>
+            <h3>Deliver</h3>
+            <p>Reliable reporting with zero production incidents, tuned to cut cloud spend by 20 to 40%.</p>
+          </li>
+        </ol>
+      </div>
     </div>
   </section>
 
-  <!-- ================= STATS ================= -->
-  <section id="stats">
-    <div class="stats-grid">
-      <div class="stat-card reveal">
-        <div class="stat-icon material-icons">calendar_month</div>
-        <div class="stat-num"><span data-count="5">0</span><span class="suffix">+</span></div>
-        <div class="stat-label">Years Experience</div>
-      </div>
-      <div class="stat-card reveal delay-1">
-        <div class="stat-icon material-icons">account_tree</div>
-        <div class="stat-num"><span data-count="120">0</span><span class="suffix">+</span></div>
-        <div class="stat-label">Workflows Migrated</div>
-      </div>
-      <div class="stat-card reveal delay-2">
-        <div class="stat-icon material-icons">savings</div>
-        <div class="stat-num"><span data-count="40">0</span><span class="suffix">%</span></div>
-        <div class="stat-label">Max Compute Cost Cut</div>
-      </div>
-      <div class="stat-card reveal">
-        <div class="stat-icon material-icons">groups</div>
-        <div class="stat-num"><span data-count="7">0</span><span class="suffix">+</span></div>
-        <div class="stat-label">Engineers Mentored</div>
-      </div>
-      <div class="stat-card reveal delay-1">
-        <div class="stat-icon material-icons">cloud</div>
-        <div class="stat-num"><span data-count="3">0</span></div>
-        <div class="stat-label">Cloud Platforms</div>
-      </div>
-      <div class="stat-card reveal delay-2">
-        <div class="stat-icon material-icons">analytics</div>
-        <div class="stat-num"><span data-count="1">0</span><span class="suffix">M+</span></div>
-        <div class="stat-label">Records Analyzed</div>
+  <!-- ================= EXPLORE ================= -->
+  <section id="explore">
+    <div class="section-head reveal">
+      <span class="section-label">Where to next</span>
+      <h2>What would you like to <span class="gradient-text">see</span>?</h2>
+    </div>
+    <div class="explore-grid">
+      <a class="explore-tile reveal" href="Udhhav_Arora_Senior_Data_Engineer_CV.pdf" download>
+        <span class="tile-num">01</span>
+        <span class="tile-label">Download my resume</span>
+        <span class="tile-sub">One page, PDF</span>
+        <span class="tile-icon material-icons">download</span>
+      </a>
+      <a class="explore-tile reveal" href="#experience">
+        <span class="tile-num">02</span>
+        <span class="tile-label">View my work experience</span>
+        <span class="tile-sub">Three roles since 2020</span>
+        <span class="tile-icon material-icons">arrow_forward</span>
+      </a>
+      <a class="explore-tile reveal" href="#skills">
+        <span class="tile-num">03</span>
+        <span class="tile-label">See the skills I've mastered</span>
+        <span class="tile-sub">From Spark to Generative AI</span>
+        <span class="tile-icon material-icons">arrow_forward</span>
+      </a>
+      <a class="explore-tile reveal" href="#achievements">
+        <span class="tile-num">04</span>
+        <span class="tile-label">My achievements</span>
+        <span class="tile-sub">Awards and Databricks certifications</span>
+        <span class="tile-icon material-icons">arrow_forward</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- ================= IMPACT ================= -->
+  <section id="impact">
+    <div class="section-head reveal">
+      <span class="section-label">02 · Impact</span>
+      <h2>What changed at each <span class="gradient-text">company</span></h2>
+      <p>The outcomes, not just the responsibilities.</p>
+    </div>
+    <div class="impact-viewport">
+      <div class="impact-track">
+        <article class="impact-panel">
+          <div class="impact-meta"><span class="impact-company">Tredence Analytics</span><span
+              class="impact-role">Senior Data Engineer · 2024 to now</span></div>
+          <h3 class="impact-headline">Led a live Azure to GCP migration for an enterprise client with zero
+            production incidents.</h3>
+          <div class="impact-metrics">
+            <div class="metric"><span class="metric-num"><span data-count="150">0</span>+</span><span
+                class="metric-label">production workflows migrated</span></div>
+            <div class="metric"><span class="metric-num"><span data-count="95">0</span>%+</span><span
+                class="metric-label">validation parity on migrated workloads</span></div>
+            <div class="metric"><span class="metric-num">~<span data-count="85">0</span>%</span><span
+                class="metric-label">faster dependency analysis per table</span></div>
+            <div class="metric"><span class="metric-num">20–<span data-count="40">0</span>%</span><span
+                class="metric-label">lower DBU and cloud spend</span></div>
+          </div>
+        </article>
+        <article class="impact-panel">
+          <div class="impact-meta"><span class="impact-company">DBS Bank</span><span class="impact-role">Data
+              Engineer · 2021 to 2024</span></div>
+          <h3 class="impact-headline">Rebuilt the Risk and Audit reporting platform and cut processing from 13 hours
+            to 4.</h3>
+          <div class="impact-metrics">
+            <div class="metric"><span class="metric-num">~<span data-count="69">0</span>%</span><span
+                class="metric-label">faster end-to-end processing</span></div>
+            <div class="metric"><span class="metric-num"><span data-count="7">0</span>+</span><span
+                class="metric-label">source systems integrated</span></div>
+            <div class="metric"><span class="metric-num"><span data-count="10">0</span>+</span><span
+                class="metric-label">business stakeholders served</span></div>
+            <div class="metric"><span class="metric-num">~<span data-count="1">0</span>M</span><span
+                class="metric-label">records investigated for data quality</span></div>
+          </div>
+        </article>
+        <article class="impact-panel">
+          <div class="impact-meta"><span class="impact-company">BlewMinds Consulting</span><span
+              class="impact-role">Business Intelligence Consultant · 2020 to 2021</span></div>
+          <h3 class="impact-headline">Turned marketing and sales data into clear lists of high-value leads.</h3>
+          <ul class="impact-points">
+            <li>Built Tableau and Business Objects reporting that marketing and sales teams used to target their
+              campaigns.</li>
+            <li>Found critical anomalies in product data that exposed loopholes and changed business strategy.</li>
+          </ul>
+        </article>
       </div>
     </div>
   </section>
@@ -1341,24 +1905,23 @@
   <!-- ================= EXPERIENCE ================= -->
   <section id="experience">
     <div class="section-head reveal">
-      <span class="section-label">// career_path</span>
+      <span class="section-label">03 · Experience</span>
       <h2>Work <span class="gradient-text">Experience</span></h2>
       <p>Three roles, one thread: moving data reliably, cheaply and securely at enterprise scale.</p>
     </div>
-    <div class="timeline">
-      <!-- Tredence -->
-      <div class="tl-item reveal">
-        <div class="tl-dot"></div>
-        <div class="tl-card">
+    <div class="exp-deck-wrap reveal">
+      <div class="exp-deck" id="expDeck">
+        <article class="tl-card exp-card" id="role-0" aria-label="Tredence, 2024 – Now">
+          <span class="exp-index">01 / 03</span>
           <div class="tl-top">
             <div>
-              <h3 class="tl-title">Associate Manager, Big Data Engineer</h3>
+              <h3 class="tl-title">Senior Data Engineer</h3>
               <div class="tl-company">Tredence Analytics Inc. · Gurgaon, India</div>
             </div>
             <span class="tl-date">Aug 2024 – Present</span>
           </div>
           <ul class="tl-bullets">
-            <li>Migrated <b>120+ production DAGs and workflows from Azure to GCP</b> across Databricks, PySpark and GCS,
+            <li>Migrated <b>150+ production workflows from Azure to GCP</b> across Databricks, PySpark and GCS,
               while modernising <b>90+ pipelines from Hive Metastore to Unity Catalog</b>, achieving <b>95%+ validation
                 parity</b> and standardising governed data access across the platform.</li>
             <li>Built migration automation frameworks, including a Unity Catalog accelerator generating updated DDLs for
@@ -1367,26 +1930,27 @@
             <li>Re-engineered Silver and Gold layers within a <b>Medallion architecture</b>, replacing legacy
               dependencies across <b>20+ production datasets</b> while preserving downstream business logic and
               improving cross-cloud reconciliation.</li>
+            <li>Designed the <b>star schemas</b> behind the reporting layer for those datasets, giving business users
+              <b>one consistent, easy-to-query model</b> for reporting.</li>
             <li>Built an automated Azure–GCP validation framework across <b>90+ migrated pipelines</b> with schema,
               statistical, hash and business-rule checks plus <b>LLM-assisted test generation</b>; Spark tuning and
               cluster rightsizing delivered a <b>20–40% reduction</b> in DBU and cloud spend.</li>
             <li>Led a team of <b>7+ data engineers</b> across migration delivery, technical design, code reviews and
-              production RCA, while staying hands-on with Spark, SQL and Databricks.</li>
+              production RCA, coordinating <b>150+ workflow migrations</b> while staying hands-on with Spark, SQL and
+              Databricks.</li>
+            <li>Ran <b>Agile sprints</b> for the team, planning work and tracking delivery against sprint goals.</li>
           </ul>
           <div class="tag-row">
             <span class="tag hl">Azure Databricks</span><span class="tag hl">ADF</span><span
               class="tag hl">GCP</span><span class="tag hl">Unity Catalog</span><span class="tag">PySpark</span><span
               class="tag">Delta Lake</span><span class="tag">Airflow</span>
           </div>
-        </div>
-      </div>
-      <!-- DBS -->
-      <div class="tl-item reveal">
-        <div class="tl-dot"></div>
-        <div class="tl-card">
+        </article>
+        <article class="tl-card exp-card" id="role-1" aria-label="DBS Bank, 2021 – 2024">
+          <span class="exp-index">02 / 03</span>
           <div class="tl-top">
             <div>
-              <h3 class="tl-title">Analyst, Big Data Engineer</h3>
+              <h3 class="tl-title">Data Engineer</h3>
               <div class="tl-company">DBS Bank · Hyderabad, India</div>
             </div>
             <span class="tl-date">Nov 2021 – Jul 2024</span>
@@ -1395,6 +1959,8 @@
             <li>Delivered an enterprise Risk &amp; Audit data platform integrating <b>7+ source systems</b>, with Spark,
               PySpark and SQL pipelines processing <b>50+ GB</b> of data for <b>10+ business stakeholders</b>.
             </li>
+            <li>Served as day-to-day point of contact for <b>10+ business stakeholders</b>, gathering requirements and
+              communicating delivery status and risks.</li>
             <li>Migrated a business-critical Audit Reporting platform from <b>Hadoop to an internal cloud
                 environment</b>, redesigning pipelines and automating validation to cut end-to-end processing from
               <b>~13 hours to ~4 hours (~69% faster)</b>.</li>
@@ -1407,12 +1973,9 @@
             <span class="tag hl">SQL</span><span class="tag hl">PySpark</span><span class="tag">Hadoop</span><span
               class="tag">Data Warehouse</span><span class="tag">Tableau</span>
           </div>
-        </div>
-      </div>
-      <!-- BlewMinds -->
-      <div class="tl-item reveal">
-        <div class="tl-dot"></div>
-        <div class="tl-card">
+        </article>
+        <article class="tl-card exp-card" id="role-2" aria-label="BlewMinds, 2020 – 2021">
+          <span class="exp-index">03 / 03</span>
           <div class="tl-top">
             <div>
               <h3 class="tl-title">Business Intelligence Consultant</h3>
@@ -1430,7 +1993,16 @@
             <span class="tag hl">Tableau</span><span class="tag">Business Objects</span><span
               class="tag">SQL</span><span class="tag">BI</span>
           </div>
-        </div>
+        </article>
+      </div>
+      <div class="deck-controls">
+        <button type="button" class="deck-btn" id="deckPrev" aria-label="Previous role"><span
+            class="material-icons">arrow_back</span></button>
+        <button type="button" class="deck-tab is-active" data-index="0" aria-controls="role-0"><b>Tredence</b><span>2024 – Now</span></button>
+        <button type="button" class="deck-tab" data-index="1" aria-controls="role-1"><b>DBS Bank</b><span>2021 – 2024</span></button>
+        <button type="button" class="deck-tab" data-index="2" aria-controls="role-2"><b>BlewMinds</b><span>2020 – 2021</span></button>
+        <button type="button" class="deck-btn" id="deckNext" aria-label="Next role"><span
+            class="material-icons">arrow_forward</span></button>
       </div>
     </div>
   </section>
@@ -1438,164 +2010,182 @@
   <!-- ================= SKILLS ================= -->
   <section id="skills">
     <div class="section-head reveal">
-      <span class="section-label">// tech_stack</span>
+      <span class="section-label">04 · Skills</span>
       <h2>Technical <span class="gradient-text">Skills</span></h2>
       <p>A hands-on stack spanning cloud platforms, orchestration, governance and big data.</p>
     </div>
     <div class="skills-grid">
-      <div class="skill-card reveal">
-        <h3><span class="material-icons">cloud</span> Cloud &amp; Platform</h3>
-        <div class="skill-chips">
-          <span class="chip">Azure Databricks</span><span class="chip">Azure Data Factory</span>
-          <span class="chip">Azure Blob Storage</span><span class="chip">AWS S3</span>
-          <span class="chip">AWS Athena</span><span class="chip">AWS Glue</span>
-          <span class="chip">Google Cloud Storage</span><span class="chip">GCP Databricks</span>
-        </div>
-      </div>
-      <div class="skill-card reveal delay-1">
-        <h3><span class="material-icons">settings</span> Orchestration</h3>
-        <div class="skill-chips">
-          <span class="chip">Apache Airflow</span><span class="chip">Azure ADF Pipelines</span><span
-            class="chip">Scheduling</span><span class="chip">DAGs</span>
-        </div>
-      </div>
-      <div class="skill-card reveal delay-2">
-        <h3><span class="material-icons">shield</span> Governance &amp; Cataloging</h3>
-        <div class="skill-chips">
-          <span class="chip">Unity Catalog</span><span class="chip">Delta Lake</span><span class="chip">Metastore
-            Migration</span><span class="chip">Access Control</span>
-        </div>
-      </div>
-      <div class="skill-card reveal">
-        <h3><span class="material-icons">query_stats</span> Analytics &amp; Reporting</h3>
-        <div class="skill-chips">
-          <span class="chip">Tableau</span><span class="chip">Apache Superset</span><span class="chip">Data
-            Warehousing</span><span class="chip">Business Objects</span>
-        </div>
-      </div>
-      <div class="skill-card reveal delay-1">
-        <h3><span class="material-icons">code</span> Programming &amp; Query</h3>
-        <div class="skill-chips">
-          <span class="chip">SQL</span><span class="chip">Python</span><span class="chip">PySpark</span><span
-            class="chip">ETL / ELT</span>
-        </div>
-      </div>
-      <div class="skill-card reveal delay-2">
-        <h3><span class="material-icons">memory</span> Big Data Technologies</h3>
-        <div class="skill-chips">
-          <span class="chip">Apache Spark</span><span class="chip">Hadoop</span><span class="chip">Hive</span><span
-            class="chip">Distributed Computing</span>
-        </div>
-      </div>
-      <div class="skill-card reveal">
-        <h3><span class="material-icons">psychology</span> AI &amp; LLMs</h3>
-        <div class="skill-chips">
-          <span class="chip">LLM Integration</span><span class="chip">RAG Pipelines</span><span
-            class="chip">Prompt Engineering</span><span class="chip">AI Agents</span>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ================= PROJECTS / IMPACT ================= -->
-  <section id="projects">
-    <div class="section-head reveal">
-      <span class="section-label">// impact_projects</span>
-      <h2>Featured <span class="gradient-text">Impact</span></h2>
-      <p>High-leverage initiatives delivered for enterprise banking &amp; consulting clients.</p>
-    </div>
-    <div class="proj-grid">
-      <div class="proj-card reveal">
-        <div class="proj-glow"></div>
-        <div class="proj-body">
-          <div class="proj-icon"><span class="material-icons">swap_horiz</span></div>
-          <h3 class="proj-title">Azure → GCP Live Migration</h3>
-          <p class="proj-desc">Zero-disruption production migration of 120+ DAGs and workflows using Google Cloud
-            Storage &amp; Databricks, architected end-to-end as tech lead &amp; individual contributor.</p>
-          <div class="proj-metric">
-            <span class="big">0</span><span class="desc">downtime events · full data continuity</span>
+      <div class="skill-card flip-card reveal" tabindex="0" role="button" aria-pressed="false"
+        aria-label="Cloud &amp; Platform: show tools">
+        <div class="flip-inner">
+          <div class="flip-face flip-front">
+            <span class="flip-icon material-icons">cloud</span>
+            <h3>Cloud &amp; Platform</h3>
+            <span class="flip-count">8 tools</span>
+            <span class="flip-hint"><span class="material-icons">sync</span> <span class="flip-hint-text">Hover to
+                flip</span></span>
           </div>
-          <div class="tag-row"><span class="tag hl">GCP</span><span class="tag hl">Databricks</span><span
-              class="tag">GCS</span></div>
+          <div class="flip-face flip-back">
+            <h3><span class="material-icons">cloud</span> Cloud &amp; Platform</h3>
+            <div class="skill-chips">
+              <span class="chip">Azure Databricks</span><span class="chip">Azure Data Factory</span>
+              <span class="chip">Azure Blob Storage</span><span class="chip">AWS S3</span>
+              <span class="chip">AWS Athena</span><span class="chip">AWS Glue</span>
+              <span class="chip">Google Cloud Storage</span><span class="chip">GCP Databricks</span>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="proj-card reveal delay-1">
-        <div class="proj-glow"></div>
-        <div class="proj-body">
-          <div class="proj-icon"><span class="material-icons">upgrade</span></div>
-          <h3 class="proj-title">Migration Automation Frameworks</h3>
-          <p class="proj-desc">Unity Catalog DDL accelerator for 100–200+ tables per batch and an Airflow dependency
-            analyser, plus an Azure–GCP validation framework with schema, hash and LLM-assisted checks.</p>
-          <div class="proj-metric"><span class="big">~85%</span><span class="desc">faster dependency analysis · 30 min
-              → under 5 min per table</span></div>
-          <div class="tag-row"><span class="tag hl">Airflow</span><span class="tag hl">Databricks</span><span
-              class="tag">Automation</span></div>
+      <div class="skill-card flip-card reveal delay-1" tabindex="0" role="button" aria-pressed="false"
+        aria-label="Orchestration: show tools">
+        <div class="flip-inner">
+          <div class="flip-face flip-front">
+            <span class="flip-icon material-icons">settings</span>
+            <h3>Orchestration</h3>
+            <span class="flip-count">4 tools</span>
+            <span class="flip-hint"><span class="material-icons">sync</span> <span class="flip-hint-text">Hover to
+                flip</span></span>
+          </div>
+          <div class="flip-face flip-back">
+            <h3><span class="material-icons">settings</span> Orchestration</h3>
+            <div class="skill-chips">
+              <span class="chip">Apache Airflow</span><span class="chip">Azure ADF Pipelines</span><span
+                class="chip">Scheduling</span><span class="chip">DAGs</span>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="proj-card reveal delay-2">
-        <div class="proj-glow"></div>
-        <div class="proj-body">
-          <div class="proj-icon"><span class="material-icons">manage_accounts</span></div>
-          <h3 class="proj-title">Unity Catalog Governance</h3>
-          <p class="proj-desc">Modernised 90+ pipelines from Hive Metastore to Unity Catalog, with centralised
-            governance, fine-grained access control and improved discoverability across petabyte-scale datasets.</p>
-          <div class="proj-metric"><span class="big">95%+</span><span class="desc">validation parity across migrated
-              workloads</span></div>
-          <div class="tag-row"><span class="tag hl">Unity Catalog</span><span class="tag hl">Delta Lake</span><span
-              class="tag">Security</span></div>
+      <div class="skill-card flip-card reveal delay-2" tabindex="0" role="button" aria-pressed="false"
+        aria-label="Governance &amp; Cataloging: show tools">
+        <div class="flip-inner">
+          <div class="flip-face flip-front">
+            <span class="flip-icon material-icons">shield</span>
+            <h3>Governance &amp; Cataloging</h3>
+            <span class="flip-count">4 tools</span>
+            <span class="flip-hint"><span class="material-icons">sync</span> <span class="flip-hint-text">Hover to
+                flip</span></span>
+          </div>
+          <div class="flip-face flip-back">
+            <h3><span class="material-icons">shield</span> Governance &amp; Cataloging</h3>
+            <div class="skill-chips">
+              <span class="chip">Unity Catalog</span><span class="chip">Delta Lake</span><span class="chip">Metastore
+                Migration</span><span class="chip">Access Control</span>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="proj-card reveal">
-        <div class="proj-glow"></div>
-        <div class="proj-body">
-          <div class="proj-icon"><span class="material-icons">paid</span></div>
-          <h3 class="proj-title">Compute Cost Optimisation</h3>
-          <p class="proj-desc">Systematic workload rightsizing, cluster optimisation &amp; resource governance across
-            environments, cutting DBU and cloud spend sustainably.</p>
-          <div class="proj-metric"><span class="big">20–40%</span><span class="desc">reduction in cloud compute
-              costs</span></div>
-          <div class="tag-row"><span class="tag hl">Rightsizing</span><span class="tag">DBU</span><span
-              class="tag">FinOps</span></div>
+      <div class="skill-card flip-card reveal" tabindex="0" role="button" aria-pressed="false"
+        aria-label="Analytics &amp; Reporting: show tools">
+        <div class="flip-inner">
+          <div class="flip-face flip-front">
+            <span class="flip-icon material-icons">query_stats</span>
+            <h3>Analytics &amp; Reporting</h3>
+            <span class="flip-count">6 tools</span>
+            <span class="flip-hint"><span class="material-icons">sync</span> <span class="flip-hint-text">Hover to
+                flip</span></span>
+          </div>
+          <div class="flip-face flip-back">
+            <h3><span class="material-icons">query_stats</span> Analytics &amp; Reporting</h3>
+            <div class="skill-chips">
+              <span class="chip">Tableau</span><span class="chip">Apache Superset</span><span class="chip">Data
+                Warehousing</span><span class="chip">Dimensional Modelling</span><span class="chip">Star &amp; Snowflake
+                Schemas</span><span class="chip">Business Objects</span>
+            </div>
+          </div>
         </div>
       </div>
-      <a class="proj-card reveal delay-1" href="https://udhhavarora.github.io/my-flight-universe/" target="_blank" rel="noopener" style="text-decoration:none; color:inherit;">
-        <div class="proj-glow"></div>
-        <div class="proj-body">
-          <div class="proj-icon" style="background: linear-gradient(135deg, rgba(6,182,212,.15), rgba(139,92,246,.15)); border-color: rgba(6,182,212,.25);"><span class="material-icons" style="color: var(--accent-2);">flight</span></div>
-          <h3 class="proj-title">My Flight Universe ✈️</h3>
-          <p class="proj-desc">Interactive flight-log dashboard turning travel data into a visual journal. Features flight telemetry, journey timeline, route explorer, interactive replay and an AI flight agent.</p>
-          <div class="proj-metric"><span class="desc">Personal project · data visualisation</span></div>
-          <div class="tag-row"><span class="tag hl">JavaScript</span><span class="tag hl">Data Viz</span><span class="tag">AI Agent</span></div>
+      <div class="skill-card flip-card reveal delay-1" tabindex="0" role="button" aria-pressed="false"
+        aria-label="Programming &amp; Query: show tools">
+        <div class="flip-inner">
+          <div class="flip-face flip-front">
+            <span class="flip-icon material-icons">code</span>
+            <h3>Programming &amp; Query</h3>
+            <span class="flip-count">4 tools</span>
+            <span class="flip-hint"><span class="material-icons">sync</span> <span class="flip-hint-text">Hover to
+                flip</span></span>
+          </div>
+          <div class="flip-face flip-back">
+            <h3><span class="material-icons">code</span> Programming &amp; Query</h3>
+            <div class="skill-chips">
+              <span class="chip">SQL</span><span class="chip">Python</span><span class="chip">PySpark</span><span
+                class="chip">ETL / ELT</span>
+            </div>
+          </div>
         </div>
-      </a>
+      </div>
+      <div class="skill-card flip-card reveal delay-2" tabindex="0" role="button" aria-pressed="false"
+        aria-label="Big Data Technologies: show tools">
+        <div class="flip-inner">
+          <div class="flip-face flip-front">
+            <span class="flip-icon material-icons">memory</span>
+            <h3>Big Data Technologies</h3>
+            <span class="flip-count">4 tools</span>
+            <span class="flip-hint"><span class="material-icons">sync</span> <span class="flip-hint-text">Hover to
+                flip</span></span>
+          </div>
+          <div class="flip-face flip-back">
+            <h3><span class="material-icons">memory</span> Big Data Technologies</h3>
+            <div class="skill-chips">
+              <span class="chip">Apache Spark</span><span class="chip">Hadoop</span><span class="chip">Hive</span><span
+                class="chip">Distributed Computing</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="skill-card flip-card reveal" tabindex="0" role="button" aria-pressed="false"
+        aria-label="AI &amp; LLMs: show tools">
+        <div class="flip-inner">
+          <div class="flip-face flip-front">
+            <span class="flip-icon material-icons">psychology</span>
+            <h3>AI &amp; LLMs</h3>
+            <span class="flip-count">4 tools</span>
+            <span class="flip-hint"><span class="material-icons">sync</span> <span class="flip-hint-text">Hover to
+                flip</span></span>
+          </div>
+          <div class="flip-face flip-back">
+            <h3><span class="material-icons">psychology</span> AI &amp; LLMs</h3>
+            <div class="skill-chips">
+              <span class="chip">LLM Integration</span><span class="chip">RAG Pipelines</span><span
+                class="chip">Prompt Engineering</span><span class="chip">AI Agents</span>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
-  <!-- ================= EDUCATION + ACHIEVEMENTS ================= -->
-  <section id="education">
+  <!-- ================= STACK RIBBON ================= -->
+  <div class="stack-ribbon" id="stackRibbon" role="region" aria-label="Tech stack">
+    <div class="ribbon-row">
+      <div class="ribbon-track"><button type="button" class="tech" data-note="Workflows, Unity Catalog and DBU tuning across 150+ production workflows"><span class="tech-dot"></span>Databricks</button><button type="button" class="tech" data-note="Redesigned Spark pipelines that cut processing from ~13h to ~4h"><span class="tech-dot"></span>Apache Spark</button><button type="button" class="tech" data-note="Core language of the Azure → GCP migration"><span class="tech-dot"></span>PySpark</button><button type="button" class="tech" data-note="Moved 90+ pipelines off Hive Metastore with 95%+ validation parity"><span class="tech-dot"></span>Unity Catalog</button><button type="button" class="tech" data-note="Storage layer behind the Silver and Gold re-engineering"><span class="tech-dot"></span>Delta Lake</button><button type="button" class="tech" data-note="Built a dependency analyser that cut analysis time by ~85%"><span class="tech-dot"></span>Airflow</button><button type="button" class="tech" data-note="Re-engineered Silver and Gold layers across 20+ production datasets"><span class="tech-dot"></span>Medallion</button><button type="button" class="tech" data-note="Migrated the DBS audit platform off Hadoop"><span class="tech-dot"></span>Hadoop &amp; Hive</button><button type="button" class="tech" data-note="Workflows, Unity Catalog and DBU tuning across 150+ production workflows" tabindex="-1" aria-hidden="true"><span class="tech-dot"></span>Databricks</button><button type="button" class="tech" data-note="Redesigned Spark pipelines that cut processing from ~13h to ~4h" tabindex="-1" aria-hidden="true"><span class="tech-dot"></span>Apache Spark</button><button type="button" class="tech" data-note="Core language of the Azure → GCP migration" tabindex="-1" aria-hidden="true"><span class="tech-dot"></span>PySpark</button><button type="button" class="tech" data-note="Moved 90+ pipelines off Hive Metastore with 95%+ validation parity" tabindex="-1" aria-hidden="true"><span class="tech-dot"></span>Unity Catalog</button><button type="button" class="tech" data-note="Storage layer behind the Silver and Gold re-engineering" tabindex="-1" aria-hidden="true"><span class="tech-dot"></span>Delta Lake</button><button type="button" class="tech" data-note="Built a dependency analyser that cut analysis time by ~85%" tabindex="-1" aria-hidden="true"><span class="tech-dot"></span>Airflow</button><button type="button" class="tech" data-note="Re-engineered Silver and Gold layers across 20+ production datasets" tabindex="-1" aria-hidden="true"><span class="tech-dot"></span>Medallion</button><button type="button" class="tech" data-note="Migrated the DBS audit platform off Hadoop" tabindex="-1" aria-hidden="true"><span class="tech-dot"></span>Hadoop &amp; Hive</button></div>
+    </div>
+    <div class="ribbon-row">
+      <div class="ribbon-track"><button type="button" class="tech" data-note="Source platform for the 150+ workflow migration"><span class="tech-dot"></span>Azure</button><button type="button" class="tech" data-note="Target platform, delivered with zero incidents and zero escalations"><span class="tech-dot"></span>GCP</button><button type="button" class="tech" data-note="Upgraded and migrated production ADF pipelines"><span class="tech-dot"></span>Azure Data Factory</button><button type="button" class="tech" data-note="Complex transformations and multi-table joins for reporting layers"><span class="tech-dot"></span>SQL</button><button type="button" class="tech" data-note="Automation frameworks for DDL generation and data validation"><span class="tech-dot"></span>Python</button><button type="button" class="tech" data-note="Databricks certified; LLM-assisted test generation for validation"><span class="tech-dot"></span>Generative AI</button><button type="button" class="tech" data-note="Designed the reporting-layer model for business users"><span class="tech-dot"></span>Star Schemas</button><button type="button" class="tech" data-note="Schema, statistical, hash and business-rule checks on 90+ pipelines"><span class="tech-dot"></span>Data Quality</button><button type="button" class="tech" data-note="Source platform for the 150+ workflow migration" tabindex="-1" aria-hidden="true"><span class="tech-dot"></span>Azure</button><button type="button" class="tech" data-note="Target platform, delivered with zero incidents and zero escalations" tabindex="-1" aria-hidden="true"><span class="tech-dot"></span>GCP</button><button type="button" class="tech" data-note="Upgraded and migrated production ADF pipelines" tabindex="-1" aria-hidden="true"><span class="tech-dot"></span>Azure Data Factory</button><button type="button" class="tech" data-note="Complex transformations and multi-table joins for reporting layers" tabindex="-1" aria-hidden="true"><span class="tech-dot"></span>SQL</button><button type="button" class="tech" data-note="Automation frameworks for DDL generation and data validation" tabindex="-1" aria-hidden="true"><span class="tech-dot"></span>Python</button><button type="button" class="tech" data-note="Databricks certified; LLM-assisted test generation for validation" tabindex="-1" aria-hidden="true"><span class="tech-dot"></span>Generative AI</button><button type="button" class="tech" data-note="Designed the reporting-layer model for business users" tabindex="-1" aria-hidden="true"><span class="tech-dot"></span>Star Schemas</button><button type="button" class="tech" data-note="Schema, statistical, hash and business-rule checks on 90+ pipelines" tabindex="-1" aria-hidden="true"><span class="tech-dot"></span>Data Quality</button></div>
+    </div>
+    <p class="ribbon-caption" aria-live="polite"><b id="ribbonName">Hover a technology</b> <span
+        id="ribbonNote">to see where I've used it</span></p>
+  </div>
+
+  <!-- ================= ACHIEVEMENTS ================= -->
+  <section id="achievements">
     <div class="section-head reveal">
-      <span class="section-label">// foundation</span>
-      <h2>Education &amp; <span class="gradient-text">Recognition</span></h2>
+      <span class="section-label">05 · Achievements</span>
+      <h2>Recognition and <span class="gradient-text">certifications</span></h2>
     </div>
     <div class="cards-row">
       <div class="info-card reveal">
-        <div class="ic-title">B.Tech, Computer Science Engineering</div>
-        <div class="ic-sub">SRM Institute of Science &amp; Technology, Chennai</div>
-        <p>Graduated June 2021 · Specialised in core computer science with a data engineering focus.</p>
-      </div>
-      <div class="info-card reveal delay-1">
-        <div class="ic-title">🏆 Achievements &amp; Awards</div>
-        <p></p>
+        <div class="ic-title">Awards</div>
         <ul class="achieve-list">
           <li><span class="material-icons">emoji_events</span><span><b>4× consecutive quarterly</b> Data Engineering
-              Excellence awards</span></li>
+              Excellence awards at Tredence Analytics</span></li>
+          <li><span class="material-icons">verified</span><span><b>150+ production workflows delivered with zero
+                incidents</b> and zero escalations, keeping business reporting uninterrupted through the migration</span></li>
           <li><span class="material-icons">star</span><span><b>Employee of the Month</b>, recognised for leadership and
               delivery at scale</span></li>
         </ul>
       </div>
-      <div class="info-card reveal delay-2">
-        <div class="ic-title">📜 Certifications</div>
-        <p></p>
+      <div class="info-card reveal">
+        <div class="ic-title">Certifications</div>
         <ul class="achieve-list">
           <li><img src="databricks.png" alt="Databricks" class="cert-logo"><span><b>Databricks Certified Data Engineer
                 Associate</b> · Lakehouse, Spark SQL, PySpark, Delta Lake &amp; production pipelines
@@ -1614,13 +2204,25 @@
                   rel="noopener">Show credential ↗</a></span></span></li>
         </ul>
       </div>
+      <div class="info-card reveal">
+        <div class="ic-title">Education</div>
+        <div class="ic-sub">B.Tech, Computer Science Engineering</div>
+        <p>SRM Institute of Science &amp; Technology, Chennai. Graduated June 2021.</p>
+      </div>
+      <a class="info-card reveal" href="https://udhhavarora.github.io/my-flight-universe/" target="_blank"
+        rel="noopener">
+        <div class="ic-title">Side project</div>
+        <div class="ic-sub">My Flight Universe</div>
+        <p>An interactive flight-log dashboard with flight telemetry, a journey timeline, a route explorer, replay and
+          an AI flight agent. Built with JavaScript.</p>
+      </a>
     </div>
   </section>
 
   <!-- ================= CONTACT ================= -->
   <section id="contact">
     <div class="section-head reveal">
-      <span class="section-label">// connect</span>
+      <span class="section-label">06 · Contact</span>
       <h2>Let's <span class="gradient-text">Connect</span></h2>
       <p>Open to opportunities worldwide, relocation-ready, visa sponsorship welcome.</p>
     </div>
@@ -1654,134 +2256,249 @@
   </section>
 
   <footer>
-    <p>© 2026 Udhhav Arora · Built with <span class="heart">♥</span>, data &amp; far too much <span
-        class="material-icons" style="font-size:16px; vertical-align:middle;">local_cafe</span>.</p>
+    <p>© 2026 Udhhav Arora</p>
   </footer>
 
   <button id="backTop" aria-label="Back to top"><span class="material-icons">arrow_upward</span></button>
 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
   <script>
     (function () {
       'use strict';
 
-      /* ---------- Typewriter effect ---------- */
-      const phrases = [
-        'Senior Data Engineer',
-        'Associate Manager · Data Engineering',
-        'Databricks Certified Data Engineer',
-        'Databricks Generative AI Engineer',
-        'Azure · AWS · GCP',
-        'Apache Spark · PySpark · Databricks',
-        'Data Governance · Unity Catalog',
-        'Cost Optimisation · FinOps'
-      ];
-      const typeEl = document.getElementById('typeText');
-      let phraseIdx = 0, charIdx = 0, deleting = false;
-      function type() {
-        const current = phrases[phraseIdx];
-        typeEl.textContent = current.substring(0, charIdx);
-        let delay = deleting ? 45 : 90;
-        if (!deleting && charIdx < current.length) {
-          charIdx++; delay = 90;
-        } else if (!deleting && charIdx === current.length) {
-          delay = 1800; deleting = true;
-        } else if (deleting && charIdx > 0) {
-          charIdx--; delay = 35;
-        } else {
-          deleting = false; phraseIdx = (phraseIdx + 1) % phrases.length;
-          delay = 300;
-        }
-        setTimeout(type, delay);
-      }
-      type();
+      const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      const finePointer = window.matchMedia('(pointer: fine)').matches;
 
-      /* ---------- Data-network canvas ---------- */
+      /* ---------- Intro: the greeting types itself in ----------
+         The text lives in the HTML (for search engines and visitors without JS); here it is
+         emptied and typed back one character at a time, then the rest of the intro fades in. */
+      const heroSection = document.getElementById('hero');
+      const introHeading = document.querySelector('.intro-type');
+      introHeading.setAttribute('aria-label', introHeading.textContent.replace(/\s+/g, ' ').trim());
+      const typeLines = [...document.querySelectorAll('.type-line')].map(line => ({
+        line,
+        segs: [...line.querySelectorAll('.seg')].map(seg => ({ seg, text: seg.textContent.replace(/\s+/g, ' ') }))
+      }));
+      const finishIntro = () => heroSection.classList.add('intro-done');
+      if (reduceMotion) {
+        typeLines.forEach(({ line }) => { line.style.visibility = 'visible'; });
+        finishIntro();
+      } else {
+        const caret = document.createElement('span');
+        caret.className = 'caret';
+        caret.setAttribute('aria-hidden', 'true');
+        typeLines.forEach(({ segs }) => segs.forEach(({ seg }) => { seg.textContent = ''; }));
+        let li = 0, si = 0, ci = 0;
+        const typeNext = () => {
+          const { line, segs } = typeLines[li];
+          const cur = segs[si];
+          line.style.visibility = 'visible';
+          cur.seg.textContent = cur.text.slice(0, ++ci);
+          cur.seg.after(caret);
+          if (ci < cur.text.length) return setTimeout(typeNext, 45 + Math.random() * 55);
+          ci = 0;
+          if (++si < segs.length) return setTimeout(typeNext, 60);
+          si = 0;
+          if (++li < typeLines.length) return setTimeout(typeNext, 450);
+          finishIntro();
+        };
+        setTimeout(typeNext, 500);
+      }
+
+      /* ---------- Data pipeline background ----------
+         A medallion pipeline (source → bronze → silver → gold → serve) drawn as a DAG.
+         Records flow along the edges and take on each layer's colour as they are refined;
+         hovering a table shows its name and makes it emit more records. */
       const canvas = document.getElementById('particles');
       const ctx = canvas.getContext('2d');
-      let particles = [];
-      let W, H;
-      function resizeCanvas() {
-        W = canvas.width = window.innerWidth;
-        H = canvas.height = window.innerHeight;
-      }
-      resizeCanvas();
-      window.addEventListener('resize', resizeCanvas);
+      const LAYERS = [
+        { name: 'SOURCE', color: '108,117,135', tables: ['kafka.events', 's3://landing', 'postgres.crm', 'rest.api', 'sftp.drop'] },
+        { name: 'BRONZE', color: '176,118,58', tables: ['bronze.events', 'bronze.orders', 'bronze.customers', 'bronze.files'] },
+        { name: 'SILVER', color: '112,124,145', tables: ['silver.orders_clean', 'silver.customers_dedup', 'silver.sessions'] },
+        { name: 'GOLD', color: '196,148,38', tables: ['gold.revenue_daily', 'gold.customer_360', 'gold.kpis'] },
+        { name: 'SERVE', color: '15,37,87', tables: ['bi.dashboards', 'ml.features'] }
+      ];
+      let W, H, nodes = [], edges = [], packets = [], dashOffset = 0, boost = 0;
+      const heroEl = document.getElementById('hero');
+      // Text sitting directly on the background (not inside a card) gets a clear zone
+      const clearZones = document.querySelectorAll(
+        '.hero-copy > *, .section-head > *, .flow-step > :not(.flow-node), .contact-note, footer p');
+      const textRange = document.createRange();
 
-      const COLORS = ['rgba(59,130,246,', 'rgba(6,182,212,', 'rgba(139,92,246,'];
-      class Particle {
-        constructor() {
-          this.reset(true);
+      const mouse = { x: -9999, y: -9999 };
+      window.addEventListener('pointermove', e => { mouse.x = e.clientX; mouse.y = e.clientY; }, { passive: true });
+      document.addEventListener('pointerleave', () => { mouse.x = mouse.y = -9999; });
+      window.addEventListener('scroll', () => { boost = Math.min(boost + .12, 2.5); }, { passive: true });
+
+      function buildGraph() {
+        const dpr = Math.min(window.devicePixelRatio || 1, 2);
+        W = window.innerWidth;
+        H = window.innerHeight;
+        canvas.width = W * dpr;
+        canvas.height = H * dpr;
+        canvas.style.width = W + 'px';
+        canvas.style.height = H + 'px';
+        ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+        nodes = []; edges = []; packets = [];
+        const compact = W < 700;
+        const cols = LAYERS.map((layer, li) => {
+          const count = compact ? Math.min(layer.tables.length, 3) : layer.tables.length;
+          const x = W * (.06 + li * (.88 / (LAYERS.length - 1)));
+          return Array.from({ length: count }, (_, i) => {
+            const node = {
+              x, y: H * (.24 + (i + .5) * (.66 / count)) + (Math.random() - .5) * 28,
+              layer: li, name: layer.tables[i], pulse: 0, out: []
+            };
+            nodes.push(node);
+            return node;
+          });
+        });
+        // Each table feeds its counterpart downstream, sometimes a second one too
+        for (let li = 0; li < cols.length - 1; li++) {
+          const from = cols[li], to = cols[li + 1];
+          from.forEach((a, i) => {
+            const targets = new Set([to[Math.round(i * (to.length - 1) / Math.max(from.length - 1, 1))]]);
+            if (Math.random() < .55) targets.add(to[Math.floor(Math.random() * to.length)]);
+            targets.forEach(b => { const e = { a, b }; edges.push(e); a.out.push(e); });
+          });
         }
-        reset(init) {
-          this.x = Math.random() * W;
-          this.y = init ? Math.random() * H : -10;
-          this.r = Math.random() < 0.12 ? Math.random() * 3 + 2.5 : Math.random() * 1.8 + 0.5;
-          this.isNode = this.r > 2;
-          this.speedY = Math.random() * 0.35 + 0.08;
-          this.speedX = (Math.random() - 0.5) * 0.25;
-          this.color = COLORS[Math.floor(Math.random() * COLORS.length)];
-          this.alpha = Math.random() * 0.5 + 0.15;
-          this.pulse = Math.random() * Math.PI * 2;
-        }
-        update() {
-          this.y += this.speedY;
-          this.x += this.speedX;
-          this.pulse += 0.015;
-          if (this.y > H + 10) this.reset(false);
-          if (this.x > W + 10) this.x = -10;
-          if (this.x < -10) this.x = W + 10;
-        }
-        draw() {
-          const a = this.alpha * (0.6 + 0.4 * Math.sin(this.pulse));
+      }
+      buildGraph();
+      window.addEventListener('resize', buildGraph);
+
+      function pointOn(e, t) {
+        const { a, b } = e, dx = (b.x - a.x) * .5, u = 1 - t;
+        return {
+          x: u * u * u * a.x + 3 * u * u * t * (a.x + dx) + 3 * u * t * t * (b.x - dx) + t * t * t * b.x,
+          y: u * u * u * a.y + 3 * u * u * t * a.y + 3 * u * t * t * b.y + t * t * t * b.y
+        };
+      }
+
+      function emit(node) {
+        const e = node.out[Math.floor(Math.random() * node.out.length)];
+        if (e) packets.push({ e, t: 0, speed: .004 + Math.random() * .003 });
+      }
+
+      function box(x, y, r) {
+        ctx.beginPath();
+        if (ctx.roundRect) ctx.roundRect(x - r, y - r, r * 2, r * 2, 3);
+        else ctx.rect(x - r, y - r, r * 2, r * 2);
+      }
+
+      function drawFrame() {
+        ctx.clearRect(0, 0, W, H);
+        dashOffset -= .5 + boost;
+
+        // Pipes, with a dashed flow running along them
+        edges.forEach(({ a, b }) => {
+          const dx = (b.x - a.x) * .5;
           ctx.beginPath();
-          ctx.arc(this.x, this.y, this.r, 0, Math.PI * 2);
-          ctx.fillStyle = this.color + a + ')';
-          ctx.fill();
-          if (this.isNode) {
-            ctx.beginPath();
-            ctx.arc(this.x, this.y, this.r + 4, 0, Math.PI * 2);
-            ctx.fillStyle = this.color + (a * 0.15) + ')';
-            ctx.fill();
-          }
-        }
-      }
-      function initParticles() {
-        const count = Math.min(Math.floor(W * H / 9000), 160);
-        particles = Array.from({ length: count }, () => new Particle());
-      }
-      initParticles();
-      window.addEventListener('resize', initParticles);
+          ctx.moveTo(a.x, a.y);
+          ctx.bezierCurveTo(a.x + dx, a.y, b.x - dx, b.y, b.x, b.y);
+          ctx.setLineDash([]);
+          ctx.strokeStyle = 'rgba(15,37,87,.07)';
+          ctx.lineWidth = 1;
+          ctx.stroke();
+          ctx.setLineDash([2, 10]);
+          ctx.lineDashOffset = dashOffset;
+          ctx.strokeStyle = 'rgba(15,37,87,.16)';
+          ctx.stroke();
+        });
+        ctx.setLineDash([]);
 
-      /* Connection lines — data-network style */
-      const CONNECT_DIST = 150;
-      const CONNECT_DIST2 = CONNECT_DIST * CONNECT_DIST;
-      function drawConnections() {
-        for (let i = 0; i < particles.length; i++) {
-          for (let j = i + 1; j < particles.length; j++) {
-            const dx = particles[i].x - particles[j].x;
-            const dy = particles[i].y - particles[j].y;
-            const dist2 = dx * dx + dy * dy;
-            if (dist2 < CONNECT_DIST2) {
-              const t = 1 - dist2 / CONNECT_DIST2;
-              const a = 0.18 * t;
-              const w = particles[i].isNode || particles[j].isNode ? 1.2 : 0.7;
-              ctx.beginPath();
-              ctx.moveTo(particles[i].x, particles[i].y);
-              ctx.lineTo(particles[j].x, particles[j].y);
-              ctx.strokeStyle = 'rgba(59,130,246,' + a + ')';
-              ctx.lineWidth = w;
-              ctx.stroke();
-            }
+        // Records in flight, each with a short trail
+        for (let i = packets.length - 1; i >= 0; i--) {
+          const p = packets[i];
+          p.t += p.speed * (1 + boost);
+          if (p.t >= 1) {
+            packets.splice(i, 1);
+            p.e.b.pulse = 1;
+            emit(p.e.b);
+            continue;
+          }
+          const c = LAYERS[p.e.a.layer].color;
+          for (let k = 3; k >= 0; k--) {
+            const q = pointOn(p.e, Math.max(p.t - k * .03, 0));
+            const size = 4.5 - k;
+            ctx.fillStyle = 'rgba(' + c + ',' + (.6 - k * .14) + ')';
+            ctx.fillRect(q.x - size / 2, q.y - size / 2, size, size);
           }
         }
+
+        // Tables; the one nearest the cursor shows its name
+        let hover = null, best = 80 * 80;
+        nodes.forEach(n => {
+          const d = (n.x - mouse.x) ** 2 + (n.y - mouse.y) ** 2;
+          if (d < best) { best = d; hover = n; }
+        });
+        nodes.forEach(n => {
+          const c = LAYERS[n.layer].color;
+          n.pulse *= .93;
+          if (n.pulse > .03) {
+            box(n.x, n.y, 7 + (1 - n.pulse) * 10);
+            ctx.strokeStyle = 'rgba(' + c + ',' + (n.pulse * .45) + ')';
+            ctx.lineWidth = 1;
+            ctx.stroke();
+          }
+          box(n.x, n.y, n === hover ? 8 : 6);
+          ctx.fillStyle = '#fff';
+          ctx.fill();
+          ctx.strokeStyle = 'rgba(' + c + ',' + (n === hover ? .9 : .5) + ')';
+          ctx.lineWidth = 1.4;
+          ctx.stroke();
+        });
+        // Wipe the pipeline out from behind text so boxes and lines never cross copy
+        ctx.globalCompositeOperation = 'destination-out';
+        ctx.fillStyle = 'rgba(0,0,0,.94)';
+        clearZones.forEach(el => {
+          // measure the text itself, not the full-width block it sits in
+          textRange.selectNodeContents(el);
+          const r = textRange.getBoundingClientRect();
+          if (!r.width || r.bottom < -20 || r.top > H + 20) return;
+          ctx.beginPath();
+          if (ctx.roundRect) ctx.roundRect(r.left - 16, r.top - 12, r.width + 32, r.height + 24, 14);
+          else ctx.rect(r.left - 16, r.top - 12, r.width + 32, r.height + 24);
+          ctx.fill();
+        });
+        ctx.globalCompositeOperation = 'source-over';
+
+        // Text (layer names, table names) belongs to the hero only: it fades out as the
+        // hero scrolls away while the pipeline itself keeps running
+        const textAlpha = Math.max(0, Math.min(1, (heroEl.getBoundingClientRect().bottom - H * .35) / (H * .4)));
+        if (textAlpha > 0) {
+          ctx.font = '600 10px "IBM Plex Mono", monospace';
+          ctx.textAlign = 'center';
+          ctx.fillStyle = 'rgba(15,37,87,' + (.3 * textAlpha) + ')';
+          LAYERS.forEach((layer, li) => {
+            const col = nodes.filter(n => n.layer === li);
+            ctx.fillText(layer.name, col[0].x, Math.min(...col.map(n => n.y)) - 26);
+          });
+        }
+        if (hover && textAlpha > 0) {
+          ctx.font = '500 11px "IBM Plex Mono", monospace';
+          const label = hover.name, tw = ctx.measureText(label).width;
+          const lx = Math.min(hover.x + 14, W - tw - 16), ly = hover.y - 12;
+          ctx.fillStyle = 'rgba(255,255,255,' + (.92 * textAlpha) + ')';
+          ctx.fillRect(lx - 6, ly - 12, tw + 12, 18);
+          ctx.textAlign = 'left';
+          ctx.fillStyle = 'rgba(15,37,87,' + (.9 * textAlpha) + ')';
+          ctx.fillText(label, lx, ly + 1);
+          if (Math.random() < .08) emit(hover);
+        }
+
+        // New records keep arriving from the sources
+        if (Math.random() < .04 + boost * .03) {
+          const sources = nodes.filter(n => n.layer === 0);
+          emit(sources[Math.floor(Math.random() * sources.length)]);
+        }
+        boost *= .95;
       }
+
       let running = true;
       (function animate() {
-        if (!running) return;
-        ctx.clearRect(0, 0, W, H);
-        particles.forEach(p => { p.update(); p.draw(); });
-        drawConnections();
-        requestAnimationFrame(animate);
+        drawFrame();
+        if (running) requestAnimationFrame(animate);
       })();
 
       /* ---------- Counters ---------- */
@@ -1796,7 +2513,7 @@
           function tick(now) {
             const progress = Math.min((now - start) / dur, 1);
             const eased = 1 - Math.pow(1 - progress, 3);
-            el.textContent = Math.floor(eased * target);
+            el.textContent = Math.round(eased * target);
             if (progress < 1) requestAnimationFrame(tick);
             else el.textContent = target;
           }
@@ -1808,15 +2525,290 @@
 
       /* ---------- Scroll reveal ---------- */
       const revealEls = document.querySelectorAll('.reveal');
-      const revealObserver = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add('visible');
-            revealObserver.unobserve(entry.target);
+      if (window.gsap && window.ScrollTrigger && !reduceMotion) {
+        initGsap();
+      } else {
+        const revealObserver = new IntersectionObserver((entries) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('visible');
+              revealObserver.unobserve(entry.target);
+            }
+          });
+        }, { threshold: 0.12 });
+        revealEls.forEach(el => revealObserver.observe(el));
+      }
+
+      /* GSAP owns the reveal motion: CSS transitions are switched off inline while it
+         animates, then cleared so hover transitions work again afterwards. */
+      function initGsap() {
+        gsap.registerPlugin(ScrollTrigger);
+        const done = 'transform,opacity,transition';
+        gsap.set(revealEls, { transition: 'none' });
+        revealEls.forEach(el => el.classList.add('visible'));
+
+        // Intro: portrait wipes up while the greeting types
+        gsap.timeline({ defaults: { ease: 'power3.out' } })
+          .from('.portrait-frame', { clipPath: 'inset(100% 0% 0% 0% round 28px)', duration: 1.2, ease: 'power4.inOut' })
+          .from('.portrait-frame img', { scale: 1.35, duration: 1.6, clearProps: 'transform' }, '<')
+          .from('.portrait-offset', { x: -18, y: -18, opacity: 0, duration: .8, clearProps: 'transform,opacity' }, '-=0.9');
+
+        // Hero drifts apart as you scroll away (desktop only: on phones the hero is
+        // taller than the screen, so fading it would wash out text still being read)
+        gsap.matchMedia().add('(min-width: 861px)', () => {
+          const heroScroll = { trigger: '#hero', start: 'top top', end: 'bottom top', scrub: true };
+          gsap.to('.hero-portrait', { yPercent: 14, ease: 'none', scrollTrigger: heroScroll });
+          gsap.to('.hero-copy', { y: -60, opacity: .15, ease: 'none', scrollTrigger: heroScroll });
+        });
+
+        // Everything else rises in as it enters, staggered per batch
+        const rest = gsap.utils.toArray('.reveal').filter(el => !el.closest('#hero'));
+        gsap.set(rest, { y: 40, opacity: 0 });
+        ScrollTrigger.batch(rest, {
+          start: 'top 88%',
+          once: true,
+          onEnter: batch => gsap.to(batch, {
+            y: 0, opacity: 1, duration: .9, ease: 'power3.out', stagger: .1, clearProps: done
+          })
+        });
+
+        // Skill flashcards give a small peek as they arrive, hinting that they flip.
+        // Done with a class (not inline styles) so the CSS hover flip keeps working.
+        ScrollTrigger.create({
+          trigger: '.skills-grid', start: 'top 70%', once: true,
+          onEnter: () => document.querySelectorAll('.flip-card').forEach((card, i) => {
+            gsap.delayedCall(.5 + i * .09, () => card.classList.add('is-peeking'));
+            gsap.delayedCall(.95 + i * .09, () => card.classList.remove('is-peeking'));
+          })
+        });
+
+        initDeck();
+
+        // What I do: the pipeline draws itself as you scroll and each stage lights up as
+        // the line reaches it. On desktop the section pins while it draws.
+        const flow = document.getElementById('flow');
+        const steps = gsap.utils.toArray('.flow-step');
+        const drawFlow = p => {
+          flow.style.setProperty('--p', p.toFixed(3));
+          steps.forEach((step, i) => step.classList.toggle('is-on', p >= i / (steps.length - 1) - .02));
+        };
+        flow.classList.add('is-live');
+        drawFlow(0);
+
+        const mm = gsap.matchMedia();
+        mm.add('(min-width: 861px)', () => {
+          ScrollTrigger.create({
+            trigger: '#what-i-do', start: 'top top', end: '+=160%', pin: true,
+            onUpdate: self => drawFlow(self.progress),
+            onToggle: self => canvas.classList.toggle('is-muted', self.isActive)
+          });
+
+          // Impact: company panels slide sideways while the section is pinned
+          const viewport = document.querySelector('.impact-viewport');
+          const track = document.querySelector('.impact-track');
+          viewport.classList.add('is-driven');
+          const distance = () => Math.max(0,
+            track.scrollWidth - viewport.clientWidth + 2 * parseFloat(getComputedStyle(viewport).paddingLeft));
+          gsap.to(track, {
+            x: () => -distance(), ease: 'none',
+            scrollTrigger: {
+              trigger: '#impact', start: 'top top', end: () => '+=' + distance(),
+              pin: true, scrub: .6, invalidateOnRefresh: true
+            }
+          });
+          return () => viewport.classList.remove('is-driven');
+        });
+        mm.add('(max-width: 860px)', () => {
+          ScrollTrigger.create({
+            trigger: flow, start: 'top 75%', end: 'bottom 60%',
+            onUpdate: self => drawFlow(self.progress)
+          });
+          ScrollTrigger.create({
+            trigger: '#what-i-do', start: 'top 70%', end: 'bottom 30%',
+            onToggle: self => canvas.classList.toggle('is-muted', self.isActive)
+          });
+        });
+
+        // Stack ribbon: rows drift in opposite directions; scrolling speeds them up and
+        // follows your scroll direction, hovering pauses them
+        const ribbon = document.getElementById('stackRibbon');
+        ribbon.classList.add('is-animated');
+        const loops = gsap.utils.toArray('.ribbon-track').map((track, i) => i % 2
+          ? gsap.fromTo(track, { xPercent: -50 }, { xPercent: 0, duration: 46, ease: 'none', repeat: -1 })
+          : gsap.to(track, { xPercent: -50, duration: 40, ease: 'none', repeat: -1 }));
+        let ribbonDir = 1, ribbonHover = false;
+        const setRibbonSpeed = (speed, dur) => loops.forEach(l => gsap.to(l, { timeScale: speed, duration: dur, overwrite: true }));
+        ScrollTrigger.create({
+          trigger: ribbon, start: 'top bottom', end: 'bottom top',
+          onUpdate: self => {
+            if (ribbonHover) return;
+            ribbonDir = self.direction;
+            const v = Math.min(Math.abs(self.getVelocity()) / 250, 6);
+            setRibbonSpeed(ribbonDir * (1 + v), .2);
+            gsap.delayedCall(.25, () => { if (!ribbonHover) setRibbonSpeed(ribbonDir, .8); });
           }
         });
-      }, { threshold: 0.12 });
-      revealEls.forEach(el => revealObserver.observe(el));
+        ribbon.addEventListener('pointerenter', () => { ribbonHover = true; setRibbonSpeed(0, .5); });
+        ribbon.addEventListener('pointerleave', () => { ribbonHover = false; setRibbonSpeed(ribbonDir, .6); });
+
+        if (!finePointer) return;
+
+        // Portrait tilts toward the cursor
+        const tilt = document.querySelector('.portrait-tilt');
+        const rotY = gsap.quickTo(tilt, 'rotationY', { duration: .6, ease: 'power3' });
+        const rotX = gsap.quickTo(tilt, 'rotationX', { duration: .6, ease: 'power3' });
+        const hero = document.getElementById('hero');
+        hero.addEventListener('pointermove', e => {
+          const r = tilt.getBoundingClientRect();
+          rotY(((e.clientX - r.left) / r.width - .5) * 16);
+          rotX(-((e.clientY - r.top) / r.height - .5) * 16);
+        });
+        hero.addEventListener('pointerleave', () => { rotY(0); rotX(0); });
+
+      }
+
+      /* Experience deck: cards stack with the current role on top. Arrows, tabs, swipe
+         or the keyboard arrow keys send the top card off and bring the next one up. */
+      function initDeck() {
+        const wrap = document.querySelector('.exp-deck-wrap');
+        const deck = document.getElementById('expDeck');
+        const cards = gsap.utils.toArray('.exp-card');
+        const tabs = gsap.utils.toArray('.deck-tab');
+        const STEP = 14;
+        let order = cards.map((_, i) => i);
+        let busy = false;
+        wrap.classList.add('is-deck');
+
+        function size() {
+          cards.forEach(c => { c.style.height = 'auto'; });
+          const h = Math.max(...cards.map(c => c.offsetHeight));
+          cards.forEach(c => { c.style.height = h + 'px'; });
+          deck.style.height = (h + STEP * (cards.length - 1)) + 'px';
+        }
+
+        function layout(duration) {
+          order.forEach((ci, depth) => {
+            cards[ci].classList.toggle('is-back', depth > 0);
+            cards[ci].setAttribute('aria-hidden', depth > 0);
+            gsap.to(cards[ci], {
+              y: depth * STEP, scale: 1 - depth * .045, x: 0, rotation: 0, opacity: 1,
+              zIndex: cards.length - depth, duration, ease: 'power3.out', overwrite: 'auto'
+            });
+          });
+          tabs.forEach((t, i) => t.classList.toggle('is-active', i === order[0]));
+        }
+
+        function next() {
+          if (busy) return;
+          busy = true;
+          const top = cards[order[0]];
+          gsap.to(top, {
+            x: -80, rotation: -4, opacity: 0, duration: .35, ease: 'power2.in',
+            onComplete: () => {
+              order.push(order.shift());
+              gsap.set(top, { x: 0, rotation: 0, zIndex: 0 });
+              layout(.6);
+              busy = false;
+            }
+          });
+        }
+
+        function prev() {
+          if (busy) return;
+          busy = true;
+          const incoming = cards[order[order.length - 1]];
+          order.unshift(order.pop());
+          gsap.set(incoming, { x: 80, rotation: 4, opacity: 0, y: 0, scale: 1, zIndex: cards.length + 1 });
+          incoming.classList.remove('is-back');
+          layout(.6);
+          gsap.delayedCall(.6, () => { busy = false; });
+        }
+
+        function goTo(i) {
+          if (busy || order[0] === i) return;
+          const steps = order.indexOf(i);
+          // walk forward one card at a time so every step animates
+          const tick = () => { if (order[0] !== i) { next(); gsap.delayedCall(.42, tick); } };
+          if (steps === order.length - 1) prev(); else tick();
+        }
+
+        document.getElementById('deckNext').addEventListener('click', next);
+        document.getElementById('deckPrev').addEventListener('click', prev);
+        tabs.forEach((t, i) => t.addEventListener('click', () => goTo(i)));
+        wrap.addEventListener('keydown', e => {
+          if (e.key === 'ArrowRight') { e.preventDefault(); next(); }
+          if (e.key === 'ArrowLeft') { e.preventDefault(); prev(); }
+        });
+
+        // Drag or swipe the top card sideways
+        let startX = null;
+        deck.addEventListener('pointerdown', e => {
+          if (busy || e.target.closest('a, button')) return;
+          startX = e.clientX;
+          deck.setPointerCapture(e.pointerId);
+        });
+        deck.addEventListener('pointermove', e => {
+          if (startX === null) return;
+          const dx = e.clientX - startX;
+          gsap.set(cards[order[0]], { x: dx * .6, rotation: dx * .02 });
+        });
+        const release = e => {
+          if (startX === null) return;
+          const dx = e.clientX - startX;
+          startX = null;
+          if (dx < -60) next();
+          else if (dx > 60) { gsap.to(cards[order[0]], { x: 0, rotation: 0, duration: .3 }); prev(); }
+          else gsap.to(cards[order[0]], { x: 0, rotation: 0, duration: .4, ease: 'power3.out' });
+        };
+        deck.addEventListener('pointerup', release);
+        deck.addEventListener('pointercancel', release);
+
+        size();
+        layout(0);
+        window.addEventListener('resize', () => { size(); layout(0); });
+        if (document.fonts) document.fonts.ready.then(() => { size(); layout(0); });
+      }
+
+      /* ---------- Skill flashcards ---------- */
+      document.querySelectorAll('.flip-card').forEach(card => {
+        const flip = () => {
+          const on = card.classList.toggle('is-flipped');
+          card.setAttribute('aria-pressed', on);
+        };
+        // With a mouse, hover already flips the card; clicks only toggle on touch screens
+        if (!finePointer) card.addEventListener('click', flip);
+        card.addEventListener('keydown', e => {
+          if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); flip(); }
+        });
+        if (!finePointer) card.querySelector('.flip-hint-text').textContent = 'Tap to flip';
+      });
+
+      /* ---------- Stack ribbon caption ---------- */
+      const ribbonName = document.getElementById('ribbonName');
+      const ribbonNote = document.getElementById('ribbonNote');
+      if (!finePointer) ribbonName.textContent = 'Tap a technology';
+      document.querySelectorAll('.tech').forEach(tech => {
+        const show = () => {
+          document.querySelectorAll('.tech.is-active').forEach(t => t.classList.remove('is-active'));
+          tech.classList.add('is-active');
+          ribbonName.textContent = tech.textContent;
+          ribbonNote.textContent = '· ' + tech.dataset.note;
+          if (window.gsap && !reduceMotion) gsap.fromTo('.ribbon-caption', { y: 6, opacity: 0 }, { y: 0, opacity: 1, duration: .35 });
+        };
+        tech.addEventListener('pointerenter', show);
+        tech.addEventListener('focus', show);
+        tech.addEventListener('click', show);
+      });
+
+      /* ---------- Active nav link ---------- */
+      const navLinks = document.querySelectorAll('.nav-links a[href^="#"]');
+      const sectionObserver = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+          if (!entry.isIntersecting) return;
+          navLinks.forEach(a => a.classList.toggle('active', a.getAttribute('href') === '#' + entry.target.id));
+        });
+      }, { rootMargin: '-45% 0px -50% 0px' });
+      document.querySelectorAll('section[id]').forEach(s => sectionObserver.observe(s));
 
       /* ---------- Nav scroll state ---------- */
       const nav = document.getElementById('nav');
@@ -1853,7 +2845,7 @@
       menu.querySelectorAll('a').forEach(a => a.addEventListener('click', closeMenu));
 
       /* ---------- Reduced motion fallback ---------- */
-      if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      if (reduceMotion) {
         running = false;
         revealEls.forEach(el => el.classList.add('visible'));
       }
